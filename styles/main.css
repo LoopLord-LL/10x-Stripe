@@ -1,0 +1,46 @@
+/* MAIN CSS FILE */
+@import url("./billing.css");
+@import url("./built-growth.css");
+@import url("./connect.css");
+@import url("./footer.css");
+@import url("./get-started.css");
+@import url("./globalscale.css");
+@import url("./header.css");
+@import url("./issuing.css");
+@import url("./launch-ease.css");
+@import url("./logos.css");
+@import url("./payment.css");
+@import url("./reinvertion.css");
+@import url("./main-container.css");
+@import url("./modular-solutions.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Inter", serif;
+}
+.container-wrapper{
+    border: 1px solid red;
+    padding: 20px;
+
+}
+.container{
+    width: 100%;
+    max-width: 1080px;
+    padding: 50px 0;    
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+.main-content {
+    padding: 0;
+    background-color: lightblue;
+}
+
+footer.container-wrapper{
+    padding: 0;
+}
+
+
