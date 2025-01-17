@@ -1,0 +1,16 @@
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    .logo-item {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+    .divider {
+        border: solid 1px #EEEEF2;
+        height: 100px;
+    
+    }
+}
