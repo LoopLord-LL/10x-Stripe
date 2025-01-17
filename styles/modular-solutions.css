@@ -1,2 +1,90 @@
 /* For modular solutions styles */
 /* every class names must begin with "modular - ..." */
+
+.modular-solutions {
+    display: flex;
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 32px;
+        margin-left: 16px;
+    }
+    .right{
+        position: relative;
+        width: 50%;
+    }
+    .cards{
+        margin-top: 136px;
+        position: relative;
+    }
+    .modular-cards img{
+        position: absolute;
+        transition: 0.5s;
+    }
+    .modular-cards .mod-card1{
+        cursor: pointer;
+        top: 0;
+        /* margin-top: 136px; */
+        z-index: 1;
+    }
+    .modular-cards .mod-card2{
+        cursor: pointer;
+        top: 93px;
+        /* margin-top: 93px; */
+        z-index: 2;
+
+    }
+    .modular-cards .mod-card3{
+        cursor: pointer;
+        top: 186px;
+        z-index: 3;
+
+    }
+
+    .modular-cards .cards:hover{
+        .mod-card1{
+           top: -110px;
+        }
+        .mod-card3{
+            top: 300px;
+            z-index: 5;
+        }
+    }
+    .modular-cards .zebra{
+        position: absolute;
+        width: 68px;
+        height: 86px;
+        border-radius: 5px;
+        /* z-index: 1; */
+        top: 412px;
+        border-top: 3px dashed black;
+        border-left: 3px dashed black;
+        /* border-image:  repeating-linear-gradient(90deg, black 0%, black 10px, transparent 10px, transparent 20px) 1; */
+    }
+
+    .modular-cards .link{
+        position: absolute;
+        top: 496px;
+        left: -34px;
+    }
+    h3{
+        color: #635BFF;
+    }
+    h2{
+        font-size: 51px;
+        font-weight: 700;
+        line-height: 68px;
+        text-align: left;
+        max-width: 460px;
+        color: #0A2540;
+    }
+    p{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: left;
+        max-width: 460px;
+        color: #425466;
+    }
+}
