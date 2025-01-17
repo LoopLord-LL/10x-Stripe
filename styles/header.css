@@ -1,1 +1,55 @@
 /* header */
+.header-section{
+    background-color: red;
+}
+.header-section nav{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.header-section nav :first-child{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-section nav :last-child{
+    display: flex; 
+    gap: 30px;
+}
+
+.header-section ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.header-section .first{
+    background-color: transparent;
+    border: none;
+    width: 108.41px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.header-section .second{
+    border-radius: 16.5px;
+    border: none;
+    width: 91.22px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-section .orange-arrow{
+    color: #E17537;
+}
+
+
