@@ -1,2 +1,86 @@
 /* For modular payment styles */
 /* every class names must begin with "payment - ..." */
+
+.payments {
+    display: flex;
+    .left {
+        width:50%;
+    }
+    .pay {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 12px;
+        h3{
+            font-size: 18px;
+            font-weight: 500;
+            color:#2E3A55;
+
+        }
+        
+    
+    }
+    h2 {
+        font-size: 37px;
+        font-weight: 700;
+        color: #0A2540;
+        padding-right: 50px;
+        margin-bottom: 24px;
+    }
+   p {
+    font-size: 17px;
+    font-weight: 700;
+    color: #425466;
+    margin-bottom: 24px;
+    padding-right: 50px;
+   }
+   button {
+    width: 185px;
+    height: 33px;
+    background-color: #635BFF;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-color: #635BFF;
+    border: none;
+    img {
+        margin-left: 5px;
+    }
+    transition: 0.3s;
+    cursor: pointer;
+    
+   }
+   button:hover {
+    background-color: #0A2540;
+   }
+}
+.left1 {
+    
+    h5 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #0A2540;
+        margin-top: 56px;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #425466;
+        margin-bottom: 4px;
+        span a {
+            color: #635BFF;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        span a:hover{
+            color: #0A2540;
+        }
+    }
+    
+}
+
+    
+
+
+
