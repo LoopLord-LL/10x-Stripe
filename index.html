@@ -12,11 +12,160 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>Stripe Landing Page</title>
 </head>
+ <!--header-section -->
+<body> 
+    <div class="main-container container-wrapper">
+        <header class="header-section container">
+            <nav>
+                <div>
+                    <img src="./media/images/stripe-logo.png" alt="stripe-logo">
+                    <ul>
+                        <li>Products</li>
+                        <li>Solutions</li>
+                        <li>Developers</li>
+                        <li>Resources</li>
+                        <li>Pricing</li> 
+                    </ul>
+                </div>
+                <div>
+                    <button>Contact sales <img src="./media/images/SVG.svg" alt="arrow1"></button>
+                    <button>
+                        Sign in 
+                        <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#E17537" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+            <section class="financial-infrastructure">
+                <article>
+                    <h1>Financial infrastructure for the internet</h1> <br>
+                    <p> Millions of companies of all sizes use Stripe online and in
+                        person to accept payments, send payouts, automate
+                        financial processes, and ultimately grow revenue.
+                    </p> <br>
+                    <div>
+                        <button>Start now <img src="./media/images/SVG.svg" alt="arrow"></button>
+                        <button>
+                            Contact <br> sales
+                            <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#0A2540" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </article>    
+                <aside>
+                    <div class="abstraction-magazine-wrapper">
+                        <img src="./media/images/issue-001.png" alt="issue-001">
+                        <div class="abstraction-magazine">
+                            <h5>Abstraction Magazine</h5>
+                            <h6>$19 per month</h6>
+                        </div>
+                        <button><img src="./media/images/pay.png" alt="pay"></button>
+                        <div class="pay-wcard">
+                            <span>Or pay with card</span>
+                        </div>
+                        <form action="">
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+                            
+                            <div class="card_info_wrapper">
+                                <img src="./media/images/visa.png" alt="visa">
+                                <label for="card-info">Card information</label>
+                                <input id="card-number" type="tel" placeholder="Number" maxlength="16">
+                                
+                                <div class="payment-fields">
+                                    <input id="expire-date-input" type="text" placeholder="MM/YY">
+                                    <img src="./media/images/cvc-icon.png" alt="cvc-icon">
+                                    <input id="CVC" type="tel" maxlength="4" placeholder="CVC">
+                                </div>
+                            </div>
+                           
+                            <label for="">Country or region</label>
+                            <div class="countries">
+                                <select name="">
+                                    <option value="US">United States</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="AT">Austria</option>
+                                </select>
+                                <input type="text" placeholder="ZIP">
+                            </div>
+                        </form>
+                        <button>Pay</button>
+                    </div>
+                    <div class="rocket-rides">
+                        <div>
+                            <img src="./media/images/rocket-rides-icon.png" alt="icon">
+                            <h4>ROCKET RIDES</h4>
+                            <img class="arrow" src="./media/images/SVG.svg" alt="">
+                            <img class="search-icon" src="./media/images/search-icon.png" alt="search-icon">
+                            <form action="">
+                                <input type="text" placeholder="Search">
+                            </form>
+                        </div>
+
+                        <div class="progress-table-container">
+                            <div>
+                                <div class="for-line">
+                                    <h3>Today</h3>
+                                </div>
+                                
+                                <div class="net-valume">
+                                    <div>
+                                        <div class="manana">
+                                            <h6>Net volume</h6>
+                                            <img src="./media/images/arrow-blue.png" alt="">
+                                        </div>
+                                        <h1>$3,528,198.72</h1>
+                                        <h5>2:00 PM</h5>
+                                    </div>
+                                    <div>
+                                        <div class="manana">
+                                            <h6>Yesterday</h6>
+                                            <img src="./media/images/arrow-blue.png" alt="">
+                                        </div>
+                                        <h2>$2,931,556.34</h2>
+                                    </div>
+                                </div>
+                                <img class="progress1" src="./media/images/progress1.png" alt="progress1">
+                            </div>
+
+                            <div class="progress sales">
+                                <div>
+                                    <h1>Net volume from sales</h1>
+                                    <h2>+32.8%</h2>
+                                </div>
+                                <div>
+                                    <h3>$39,274.29</h3>
+                                    <h4>$29,573.54</h4>
+                                </div>
+                                <img src="./media/images/progress2.png" alt="progress2">
+                                <h5>Updated today 7:50 AM</h5>
+                            </div>
+
+                            <div class="progress costumers">
+                                <div>
+                                    <h1>New customers</h1>
+                                    <h2>+32.1%</h2>
+                                </div>
+                                <div>
+                                    <h3>37</h3>
+                                    <h4>28</h4>
+                                </div>
+                                <img src="./media/images/progress3.png" alt="progress2">
+                                <h5>Updated today 7:50 AM</h5>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
 
 <body>
     <div class="main-container container-wrapper">
         <header class="header-section container">
-
+ main
         </header>
 
         <!-- for logos -->
@@ -169,6 +318,23 @@
             </div>
         </footer>
     </div>
+
+    <script>
+       
+        const input = document.getElementById("expire-date-input");
+
+        input.addEventListener("input", (event) => {
+            let value = input.value;
+            
+            value = value.replace(/[^0-9/]/g, "");
+            // Automatically insert slash after 2 digits
+            if (value.length === 2 && !value.includes("/")) {
+                value += "/";
+            }
+            // Limit length to 5 characters (MM/YY)
+            input.value = value.slice(0, 5);
+        });
+    </script>
 </body>
 
 </html>
