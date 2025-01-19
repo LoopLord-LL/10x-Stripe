@@ -1,7 +1,87 @@
 /* Header Section */
-.header-section {
-  background-color: #47415e;
+.gradient-wrap {
+  overflow: hidden;  
+  width: 3000px;
+  height: 580.47px;
+  top: -300px;
+  left: -100px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-12deg);
+}
 
+.meshgradient > .color {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: scale(3) rotate(0deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+}
+
+.c1 {
+  background: radial-gradient(#605edb 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 0 0;
+  animation: c1 8s infinite linear; 
+}
+
+.c2 {
+  background: radial-gradient(#FFB055 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 0 100%;
+  animation: c2 10s infinite linear; 
+} 
+
+.c3 {
+  background: radial-gradient(#B25EDB 25%, transparent 50%);
+  animation: c3 5s infinite linear;  
+  background-size: 80% 80%;
+  background-position: 0 100%;
+  transform: scale(3) rotate(8deg);
+}
+
+.c4 {
+  background: radial-gradient(#FF2840 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 50% 100%;
+  animation: c4 6s infinite linear;  
+}
+
+
+@keyframes c1 {
+  50% { 
+    background-size: 50% 50%;
+    background-position: 50% 100%;
+    transform: scale(3) rotate(-75deg);
+  }
+}
+
+@keyframes c2 {
+  50% { 
+    background-size: 80% 80%;
+    background-position: 50% 0;
+    transform: scale(3) rotate(90deg);
+  }
+}
+
+
+@keyframes c4 {
+  50% { 
+    background-position: 0 0;
+    animation: c1 10s infinite; 
+    transform: scale(3) rotate(-36deg);
+  }
+}
+
+.header-section {
   nav {
     margin-top: -80px;
     padding: 40px;
@@ -106,6 +186,7 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            cursor: pointer;
           }
 
           &:last-child {
@@ -117,6 +198,7 @@
             color: #0A2540;
             text-align: left;
             line-height: 20px;
+            cursor: pointer;
           }
           &:hover{
             opacity: 0.6;
@@ -474,6 +556,4 @@
       }
     }
   }
-}
-
-  
+}  
