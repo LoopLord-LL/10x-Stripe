@@ -1,7 +1,87 @@
 /* Header Section */
-.header-section {
-  background-color: #47415e;
+.gradient-wrap {
+  overflow: hidden;
+  width: 3000px;
+  height: 580.47px;
+  top: -300px;
+  left: -100px;
+  position: absolute;
+  z-index: -1;
+  transform: rotate(-12deg);
+}
 
+.meshgradient>.color {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transform: scale(3) rotate(0deg);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+}
+
+.c1 {
+  background: radial-gradient(#605edb 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 0 0;
+  animation: c1 8s infinite linear;
+}
+
+.c2 {
+  background: radial-gradient(#FFB055 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 0 100%;
+  animation: c2 10s infinite linear;
+}
+
+.c3 {
+  background: radial-gradient(#B25EDB 25%, transparent 50%);
+  animation: c3 5s infinite linear;
+  background-size: 80% 80%;
+  background-position: 0 100%;
+  transform: scale(3) rotate(8deg);
+}
+
+.c4 {
+  background: radial-gradient(#FF2840 25%, transparent 50%);
+  background-size: 80% 80%;
+  background-position: 50% 100%;
+  animation: c4 6s infinite linear;
+}
+
+
+@keyframes c1 {
+  50% {
+    background-size: 50% 50%;
+    background-position: 50% 100%;
+    transform: scale(3) rotate(-75deg);
+  }
+}
+
+@keyframes c2 {
+  50% {
+    background-size: 80% 80%;
+    background-position: 50% 0;
+    transform: scale(3) rotate(90deg);
+  }
+}
+
+
+@keyframes c4 {
+  50% {
+    background-position: 0 0;
+    animation: c1 10s infinite;
+    transform: scale(3) rotate(-36deg);
+  }
+}
+
+.header-section {
   nav {
     margin-top: -80px;
     padding: 40px;
@@ -10,7 +90,7 @@
     align-items: center;
     color: #FFFFFF;
 
-    > div:first-child {
+    >div:first-child {
       display: flex;
       align-items: center;
       gap: 27px;
@@ -18,13 +98,13 @@
       height: 44px;
     }
 
-    > div:last-child {
+    >div:last-child {
       display: flex;
       gap: 15px;
       width: 215.62px;
       height: 33px;
 
-      > button {
+      >button {
         font-size: 13.95px;
         color: #FFFFFF;
         background-color: transparent;
@@ -89,7 +169,7 @@
         line-height: 25px;
       }
 
-      > div:last-child {
+      >div:last-child {
         width: 508px;
         height: 49px;
         display: flex;
@@ -108,6 +188,7 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            cursor: pointer;
           }
 
           &:last-child {
@@ -119,8 +200,10 @@
             color: #0A2540;
             text-align: left;
             line-height: 20px;
+            cursor: pointer;
           }
-          &:hover{
+
+          &:hover {
             opacity: 0.6;
           }
         }
@@ -295,7 +378,7 @@
       left: 110px;
       box-shadow: inset 0px 1px 1px 0px #FFFFFF1A, 0px 30px 60px -30px #0000004D, 0px 50px 100px -20px #32325D40;
 
-      > div:first-child {
+      >div:first-child {
         padding: 24px;
         display: flex;
         gap: 8px;
@@ -341,7 +424,7 @@
         width: 795px;
         height: 479.89px;
 
-        > div:first-child {
+        >div:first-child {
           padding: 20px;
           background-color: #FFFFFF;
           width: 755px;
@@ -384,11 +467,11 @@
                   font-weight: 500;
                   color: #0A2540;
                 }
-                    
+
                 img {
                   height: 4px;
                   width: 7px;
-                } 
+                }
               }
 
               h1 {
@@ -403,6 +486,7 @@
                 color: #727F96;
                 margin-top: -7px;
               }
+
               h2 {
                 font-size: 11.25px;
                 font-weight: 500;
@@ -410,13 +494,15 @@
               }
             }
           }
-          .progress1{
+
+          .progress1 {
             margin-top: 30px;
             width: 468px;
             height: 70px;
           }
         }
-        .progress{
+
+        .progress {
           background-color: #FFFFFF;
           width: 220px;
           height: 220px;
@@ -426,39 +512,41 @@
           line-height: 25px;
           padding-left: 15px;
           padding-top: 15px;
-          div{
+
+          div {
             display: flex;
             gap: 10px;
 
-            h1{
+            h1 {
               font-size: 11.25px;
               font-weight: 500;
               letter-spacing: -0.10000000149011612px;
               color: #0A2540;
             }
 
-            h2{
+            h2 {
               font-size: 10px;
               font-weight: 500;
               letter-spacing: 0.20000000298023224px;
               color: #15BE53;
             }
 
-            h3{
+            h3 {
               font-size: 13.34px;
               font-weight: 500;
               letter-spacing: 0.20000000298023224px;
               color: #0A2540;
             }
 
-            h4{
+            h4 {
               font-size: 10.31px;
               font-weight: 500;
               letter-spacing: -0.10000000149011612px;
-              color: #727F96;       
+              color: #727F96;
             }
           }
-          h5{
+
+          h5 {
             font-size: 9.38px;
             font-weight: 500;
             letter-spacing: 0.20000000298023224px;
@@ -466,16 +554,14 @@
           }
         }
 
-        .sales{
+        .sales {
           left: 20px;
         }
 
-        .costumers{
+        .costumers {
           left: 270px;
         }
       }
     }
   }
 }
-
-  
