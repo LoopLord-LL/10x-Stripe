@@ -1,10 +1,6 @@
 /* Header Section */
 .gradient-wrap {
-<<<<<<< HEAD
   overflow: hidden;
-=======
-  overflow: hidden;  
->>>>>>> 878facf (feat:animated mesh gradient bg)
   width: 3000px;
   height: 580.47px;
   top: -300px;
@@ -14,11 +10,7 @@
   transform: rotate(-12deg);
 }
 
-<<<<<<< HEAD
 .meshgradient>.color {
-=======
-.meshgradient > .color {
->>>>>>> 878facf (feat:animated mesh gradient bg)
   width: 200%;
   height: 200%;
   position: absolute;
@@ -38,32 +30,19 @@
   background: radial-gradient(#605edb 25%, transparent 50%);
   background-size: 80% 80%;
   background-position: 0 0;
-<<<<<<< HEAD
   animation: c1 8s infinite linear;
-=======
-  animation: c1 8s infinite linear; 
->>>>>>> 878facf (feat:animated mesh gradient bg)
 }
 
 .c2 {
   background: radial-gradient(#FFB055 25%, transparent 50%);
   background-size: 80% 80%;
   background-position: 0 100%;
-<<<<<<< HEAD
   animation: c2 10s infinite linear;
 }
 
 .c3 {
   background: radial-gradient(#B25EDB 25%, transparent 50%);
   animation: c3 5s infinite linear;
-=======
-  animation: c2 10s infinite linear; 
-} 
-
-.c3 {
-  background: radial-gradient(#B25EDB 25%, transparent 50%);
-  animation: c3 5s infinite linear;  
->>>>>>> 878facf (feat:animated mesh gradient bg)
   background-size: 80% 80%;
   background-position: 0 100%;
   transform: scale(3) rotate(8deg);
@@ -73,20 +52,12 @@
   background: radial-gradient(#FF2840 25%, transparent 50%);
   background-size: 80% 80%;
   background-position: 50% 100%;
-<<<<<<< HEAD
   animation: c4 6s infinite linear;
-=======
-  animation: c4 6s infinite linear;  
->>>>>>> 878facf (feat:animated mesh gradient bg)
 }
 
 
 @keyframes c1 {
-<<<<<<< HEAD
   50% {
-=======
-  50% { 
->>>>>>> 878facf (feat:animated mesh gradient bg)
     background-size: 50% 50%;
     background-position: 50% 100%;
     transform: scale(3) rotate(-75deg);
@@ -94,11 +65,7 @@
 }
 
 @keyframes c2 {
-<<<<<<< HEAD
   50% {
-=======
-  50% { 
->>>>>>> 878facf (feat:animated mesh gradient bg)
     background-size: 80% 80%;
     background-position: 50% 0;
     transform: scale(3) rotate(90deg);
@@ -107,15 +74,9 @@
 
 
 @keyframes c4 {
-<<<<<<< HEAD
   50% {
     background-position: 0 0;
     animation: c1 10s infinite;
-=======
-  50% { 
-    background-position: 0 0;
-    animation: c1 10s infinite; 
->>>>>>> 878facf (feat:animated mesh gradient bg)
     transform: scale(3) rotate(-36deg);
   }
 }
@@ -285,14 +246,10 @@
             border: none;
             justify-content: center;
             gap: 10px;
-<<<<<<< HEAD
         
             .arrow::before {
               border-color: #FFFFFF;
             }
-=======
-            cursor: pointer;
->>>>>>> 878facf (feat:animated mesh gradient bg)
           }
         
           &:last-child {
@@ -302,14 +259,10 @@
             color: #0A2540;
             text-align: left;
             line-height: 20px;
-<<<<<<< HEAD
         
             .arrow::before {
               border-color: #0A2540;
             }
-=======
-            cursor: pointer;
->>>>>>> 878facf (feat:animated mesh gradient bg)
           }
 
         
