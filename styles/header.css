@@ -126,6 +126,7 @@
         &:hover {
           opacity: 0.6;
           cursor: pointer;
+          transition: 0.3s ease;
         }
       }
     }
@@ -205,6 +206,7 @@
 
           &:hover {
             opacity: 0.6;
+            transition: 0.2s ease;
           }
         }
       }
