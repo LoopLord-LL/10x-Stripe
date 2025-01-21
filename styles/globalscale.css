@@ -1,0 +1,80 @@
+.global-scale{
+    height: 910px;
+    /* position: relative; */
+    background-color: #0A2540;
+    background-image: url(../media/images/earth.png);
+    background-repeat: no-repeat;
+    clip-path: polygon(0 28%, 100% 0%, 100% 100%, 0% 100%);
+    background-position: center;
+    .content-wrapper{
+        width: 1080px;
+        height: 912px;
+        max-width: 1080px;
+        padding-top: 287px;
+        /* background-color: tomato; */
+
+    }
+    .content{
+        height: 496px;
+        gap: 96px;  
+        padding-left: 16px;
+    }
+    .top{
+        height: 312px;
+        gap: 24px;
+
+        h3{
+            font-size: 17.16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #00D4FF;
+
+        }
+        h2{
+            font-size: 35.18px;
+            font-weight: 500;
+            line-height: 48px;
+            color: #ffffff;
+        }
+        p{
+            font-size: 17.72px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #ADBDCC;
+
+        }
+    }
+
+    .bottom{
+        height: 88px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+
+        span{
+            div{
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 32px;
+                color: #ffffff;
+                border-left: 1px solid #00D4FF;
+                padding-left: 16px;
+            }
+            p{
+                font-size: 13.71px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #ADBDCC;
+                padding-left: 16px;
+
+                a{
+                    color: #00D4FF;
+                    &:hover{
+                        color: #ffffff;
+                    }
+                }
+
+            }
+        }
+    }
+}
