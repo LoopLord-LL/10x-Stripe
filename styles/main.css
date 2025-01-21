@@ -34,7 +34,7 @@ body{
     border: 1px solid green;
     margin: 0 auto;
 }
-
+S
 .main-content {
     padding: 0;
     background-color: #F6F9FC;
@@ -42,6 +42,9 @@ body{
 
 footer.container-wrapper{
     padding: 0;
+}
+a{
+    text-decoration: none;
 }
 
 
