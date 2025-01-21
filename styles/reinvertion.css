@@ -1,2 +1,112 @@
-/* For modular reinvertion styles */
-/* every class names must begin with "reinvertion - ..." */
+.enterprise-reinvention{
+    height: 908px;
+    .content{
+        height: 908px;
+        padding-left: 16px;
+        .top{
+            height: 294px;
+
+            h3{
+                font-size: 16.45px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #635BFF;
+
+            }
+            h2{
+                font-size: 34.73px;
+                font-weight: 500;
+                line-height: 48px;
+                color: #0A2540;
+                padding-top:  24px;
+            }
+            p{
+                font-size: 16.45px;
+                font-weight: 500;
+                line-height: 28px;
+                color:  #425466;
+                padding-bottom: 24px;
+                a{
+                    color: #635BFF;
+                    &:hover{
+                        color: black;
+                    }
+                }
+            }
+        }
+        button {
+            width: 185px;
+            height: 33px;
+            background-color: #635BFF;
+            border-radius: 16px;
+            font-size: 14px;
+            color: #FFFFFF;
+            cursor: pointer;
+            border: none;
+
+            &:hover{
+            background-color: #0A2540;
+            }
+        }
+
+        .bottom{
+            .top-side{
+                display: flex;
+
+                .text-wrapper{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    
+                    .text{
+                        .number{
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 31.92px;
+                            color: #0A2540;
+                        }
+                        p{
+                            font-size: 13.83px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            color: #425466;
+                        }
+                        .products{
+                            font-size: 13.95px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            color: #0A2540;
+                            padding-bottom: 24px;
+                        }
+                        .pay{
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
+                            color: #425466;
+                            font-size: 15px;
+                            font-weight: 500;
+                            line-height: 18.15px;
+                        }
+                        .connect{
+                            padding-top: 12px;             
+                        }
+                    }
+                }
+                
+            }
+
+            .bottom-side{
+               height: 100px;
+               display: flex;
+               align-items: center;
+                img{
+                    cursor: pointer;
+                }
+               .amazon{
+                border-top: 1px solid orange;
+
+               }
+            }
+        }
+    }
+}
