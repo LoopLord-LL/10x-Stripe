@@ -190,6 +190,7 @@
         position: relative;
         background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
         radial-gradient(70.71% 70.71% at 50% 50%, rgba(203, 214, 224, 0.35) 18.75%, rgba(0, 0, 0, 0) 18.75%);
+        overflow: hidden;
 
         .jacques-muller-wrapper, .hanako-yamada-wrapper{
             position: relative;
