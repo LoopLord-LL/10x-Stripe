@@ -37,14 +37,13 @@
                     </ul>
                 </div>
                 <div>
-                    <button>Contact sales <img src="./media/images/SVG.svg" alt="arrow1"></button>
                     <button>
-                        Sign in
-                        <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#E17537"
-                                stroke-width="2" />
-                        </svg>
+                        Contact sales 
+                        <div class="arrow"></div>
+                    </button>
+                    <button>
+                        Sign in 
+                        <div class="arrow"></div>
                     </button>
                 </div>
             </nav>
@@ -56,14 +55,13 @@
                         financial processes, and ultimately grow revenue.
                     </p> <br>
                     <div>
-                        <button>Start now <img src="./media/images/SVG.svg" alt="arrow"></button>
+                        <button>
+                            Start now
+                            <div class="arrow"></div>
+                        </button>
                         <button>
                             Contact <br> sales
-                            <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#0A2540"
-                                    stroke-width="2" />
-                            </svg>
+                            <div class="arrow"></div>
                         </button>
                     </div>
                 </article>
@@ -130,7 +128,7 @@
                                             <h6>Net volume</h6>
                                             <img src="./media/images/arrow-blue.png" alt="">
                                         </div>
-                                        <h1>$3,528,198.72</h1>
+                                        <h3>$3,528,198.72</h3>
                                         <h5>2:00 PM</h5>
                                     </div>
                                     <div>
@@ -146,7 +144,7 @@
 
                             <div class="progress sales">
                                 <div>
-                                    <h1>Net volume from sales</h1>
+                                    <h5>Net volume from sales</h5>
                                     <h2>+32.8%</h2>
                                 </div>
                                 <div>
@@ -159,7 +157,7 @@
 
                             <div class="progress costumers">
                                 <div>
-                                    <h1>New customers</h1>
+                                    <h5>New customers</h5>
                                     <h2>+32.1%</h2>
                                 </div>
                                 <div>
@@ -207,8 +205,7 @@
 
                 </div>
 
-
-            </section>
+        </section>
 
             <div class="main-content container-wrapper">
 
@@ -481,6 +478,55 @@
                             <h4>for customizable UIs</h4>
                         </span>
                     </article>
+                    <aside>
+                         <div class="hanako-yamada-wrapper">
+                            <div></div>
+                            <div>
+                                <span>
+                                    <h4>#9125</h4>
+                                    <h3>Hanako Yamada</h3>
+                                </span>
+                                <h2>$150.00</h2>
+                                <button>Processing</button>
+                            </div> 
+                        </div>
+                        <div class="jacques-muller-wrapper">
+                            <div></div>
+                            <div>
+                                <span>
+                                    <h4>#9124</h4>
+                                    <h3>Jacques Muller</h3>
+                                </span>
+                                <h2>$200.00</h2>
+                                <button>Processing</button>
+                            </div> 
+                        </div>
+                        <div>
+                            <button>
+                                Buyers
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                            <div class="money buyers">$150.00</div>
+                            <div id="arrows">
+                            </div>
+                            <button>
+                                Platform
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                            <div class="platform">$4.50</div>
+                            <div class="money sellers">$145.50</div>
+                            <div id="arrows">
+                            </div>    
+                            <button>
+                                <img src="./media/images/check-icon.png" alt="check-icon">
+                                Sellers or service providers
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                        </div>
+                    </aside>
                 </section>
 
                 <!-- issuing -->
@@ -1118,23 +1164,56 @@
             </div>
         </footer>
 
-        <script>
-            const input = document.getElementById("expire-date-input");
-
-            input.addEventListener("input", (event) => {
-                let value = input.value;
-
-                value = value.replace(/[^0-9/]/g, "");
-                // Automatically insert slash after 2 digits
-                if (value.length === 2 && !value.includes("/")) {
-                    value += "/";
-                }
-                // Limit length to 5 characters (MM/YY)
-                input.value = value.slice(0, 5);
-            });
-        </script>
             <script src="./scripts/header.js"></script>
             <script src="./scripts/reinvention.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    // Expiry date input event listener
+                    const input = document.getElementById("expire-date-input");
+            
+                    if (input) {
+                        input.addEventListener("input", (event) => {
+                            let value = input.value;
+            
+                            // Allow only numbers and slashes
+                            value = value.replace(/[^0-9/]/g, "");
+                            // Automatically insert slash after 2 digits
+                            if (value.length === 2 && !value.includes("/")) {
+                                value += "/";
+                            }
+                            // Limit length to 5 characters (MM/YY)
+                            input.value = value.slice(0, 5);
+                        });
+                    } else {
+                        console.error('Element with ID "expire-date-input" not found.');
+                    }
+            
+                    // SVG content definition
+                    const svgContent = `
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.178 19.569C11.2697 19.7022 11.3925 19.8112 11.5357 19.8864C11.6789 19.9617 11.8382 20.001 12 20.001C12.1618 20.001 12.3211 19.9617 12.4643 19.8864C12.6075 19.8112 12.7303 19.7022 12.822 19.569L21.822 6.569C21.9262 6.41906 21.9873 6.24343 21.9986 6.06121C22.01 5.87898 21.9712 5.69712 21.8865 5.53539C21.8018 5.37366 21.6743 5.23825 21.518 5.14386C21.3617 5.04947 21.1826 4.99971 21 5H3C2.81784 5.00075 2.63934 5.05115 2.48368 5.14576C2.32802 5.24038 2.2011 5.37564 2.11657 5.53699C2.03203 5.69835 1.99308 5.8797 2.00391 6.06153C2.01473 6.24337 2.07492 6.41881 2.178 6.569L11.178 19.569Z" fill="currentColor"/>
+                        </svg>
+                    `;
+            
+                    // Target the div with ID 'arrows'
+                    const arrowsDiv = document.getElementById('arrows');
+            
+                    // Check if the element exists
+                    if (arrowsDiv) {
+                        // Loop to append 20 SVGs
+                        for (let i = 0; i < 20; i++) {
+                            // Create a new div element for each SVG
+                            const svgElement = document.createElement('div');
+                            svgElement.innerHTML = svgContent;
+            
+                            // Append the SVG to the 'arrows' div
+                            arrowsDiv.appendChild(svgElement.firstElementChild);
+                        }
+                    } else {
+                        console.error('Element with ID "arrows" not found.');
+                    }
+                });
+            </script> 
 </body>
 
 </html>
