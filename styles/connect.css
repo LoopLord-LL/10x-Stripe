@@ -28,7 +28,8 @@
                     z-index: 1;
                 } 
                 > div:nth-child(2){
-                    background: linear-gradient(180deg, #00299C 14.4%, #0073E6 110.32%); width: 6px;
+                    background: linear-gradient(180deg, #00299C 14.4%, #0073E6 110.32%); 
+                    width: 6px;
                     height: 6.01px;
                     top: 6.99px;
                     position: absolute;
@@ -190,7 +191,6 @@
         position: relative;
         background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
         radial-gradient(70.71% 70.71% at 50% 50%, rgba(203, 214, 224, 0.35) 18.75%, rgba(0, 0, 0, 0) 18.75%);
-        overflow: hidden;
 
         .jacques-muller-wrapper, .hanako-yamada-wrapper{
             position: relative;
@@ -470,6 +470,70 @@
                 > svg:nth-child(19) {
                     fill: #0EC3FE;
                 }             
+            }
+        }
+        
+        .icon-wrapper {
+            width: 42.55px;
+            height: 42.55px;
+            top: 150px;
+            left: -120px;
+            border: 1px solid #C4CCD8;
+            position: relative;
+            transition: ease 0.3s;
+        
+
+            > div:nth-child(1) {
+                width: 5px;
+                height: 5px;
+                top: 19px;
+                left: 18.5px;
+                position: absolute; 
+                z-index: 10;
+                border: none;
+        
+
+            } 
+            > div:nth-child(2){
+                width: 11px;
+                height: 11px;
+                top: 11px;
+                position: absolute;
+                left: 11px;
+                z-index: 3;
+                border-radius: 100% 100% 2px 100% ;
+                border: 1.83px solid  #C4CCD8;   
+            }
+            > div:nth-child(3) {
+                width: 11px;
+                height: 11px;
+                top: 19px;
+                left: 19px;
+                border-radius: 2px 100% 100% 100% ;
+                position: absolute;
+                z-index: 2;
+                border: 1.83px solid #C4CCD8;
+            }
+        }
+        .icon-wrapper:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
+            transform: scale(1.1);
+
+            > div:nth-child(1) {
+                background: linear-gradient(180deg, #00299C 14.4%, #0073E6 110.32%); 
+                border: none;
+                transform: scale(1.1);
+            }
+            > div:nth-child(2) {
+                background: linear-gradient(180deg, #11EFE3 6.58%, #15E8E2 23.77%, #1FD3E0 45.12%, #21CFE0 58.66%);
+                border: none;
+                transform: scale(1.1);
+            }
+            > div:nth-child(3) {
+                background: #0073E6;
+                border: none;
+                transform: scale(1.1);
             }
         }
     }
