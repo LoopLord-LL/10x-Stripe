@@ -1,0 +1,74 @@
+.content-wrapper{
+    height: 1568px;
+
+    .top-content{
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        height: 236px;
+        gap: 24px;
+        padding-left: 16px;
+
+        h3{
+            font-size: 16.17px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #635BFF;
+        }
+        h2{
+            color: #0A2540;
+            font-size: 33.99px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+        p{
+            font-size: 16.59px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #425466;
+            width: 660px;
+        }
+    }
+
+    .bottom-content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 64px;   
+        .left, .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 50%;
+            background-color: antiquewhite;
+            gap: 80px;
+            padding-left: 16px;
+            .card{
+                width:508px;
+                height: 553px;
+                border-radius: 8px;
+                background-color: rgb(136, 153, 136);  
+            }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .zeda{
+            height: 337px;
+            padding: 4px 4px 0px 4px;
+            gap: 0;
+            background-color: green;
+        }
+        .qveda{
+            display: flex;
+            flex-direction: column;
+
+            height: 216px;
+            padding: 32px 0px 0px 0px;
+            gap: 8px;
+            opacity: 0px;
+            background-color: red;
+        }
+    }
+}
