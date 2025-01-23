@@ -190,7 +190,6 @@
         position: relative;
         background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
         radial-gradient(70.71% 70.71% at 50% 50%, rgba(203, 214, 224, 0.35) 18.75%, rgba(0, 0, 0, 0) 18.75%);
-        overflow: hidden;
 
         .jacques-muller-wrapper, .hanako-yamada-wrapper{
             position: relative;
@@ -494,13 +493,12 @@
             > div:nth-child(2){
                 width: 11px;
                 height: 11px;
-                top: 11.9px;
+                top: 11px;
                 position: absolute;
-                left: 12px;
+                left: 11px;
                 z-index: 3;
                 border-radius: 100% 100% 2px 100% ;
                 border: 1.83px solid  #C4CCD8;   
-                
             }
             > div:nth-child(3) {
                 width: 11px;
@@ -531,7 +529,8 @@
             top: 360px;
             left: 365px;
         }
-        .blue:hover {
+        }
+        .icon-wrapper:hover {
             background-color: #FFFFFF;
             box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
             transform: scale(1.1);
@@ -604,7 +603,7 @@
             }
         }
     }
-}
+
 
 @keyframes moveDown {
     0% {
