@@ -473,36 +473,34 @@
             }
         }
         
-        .icon-wrapper {
+        .icon-wrapper, .circle, .blue, .purple, .yellow, .pink {
             width: 42.55px;
             height: 42.55px;
-            top: 150px;
-            left: -120px;
             border: 1px solid #C4CCD8;
             position: relative;
             transition: ease 0.3s;
-        
+            border-radius: 4px;
 
             > div:nth-child(1) {
-                width: 5px;
-                height: 5px;
-                top: 19px;
-                left: 18.5px;
+                width: 7.3px;
+                height: 7.3px;
+                top: 18.9px;
+                left: 19px;
                 position: absolute; 
                 z-index: 10;
                 border: none;
-        
-
+                transition: ease 0.3s;
             } 
             > div:nth-child(2){
                 width: 11px;
                 height: 11px;
-                top: 11px;
+                top: 11.9px;
                 position: absolute;
-                left: 11px;
+                left: 12px;
                 z-index: 3;
                 border-radius: 100% 100% 2px 100% ;
                 border: 1.83px solid  #C4CCD8;   
+                transition: ease 0.3s;
             }
             > div:nth-child(3) {
                 width: 11px;
@@ -513,27 +511,96 @@
                 position: absolute;
                 z-index: 2;
                 border: 1.83px solid #C4CCD8;
+                transition: ease 0.3s;
             }
         }
-        .icon-wrapper:hover {
+
+        .blue {
+            top: 150px;
+            left: -120px;
+        }
+        .purple {
+            top: 350px;
+            left: -120px;
+        }
+        .yellow {
+            top: 140px;
+            left: 365px;
+        }
+        .pink {
+            top: 360px;
+            left: 365px;
+        }
+        .blue:hover {
             background-color: #FFFFFF;
             box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
             transform: scale(1.1);
 
             > div:nth-child(1) {
                 background: linear-gradient(180deg, #00299C 14.4%, #0073E6 110.32%); 
-                border: none;
-                transform: scale(1.1);
+                border: transparent;
             }
             > div:nth-child(2) {
                 background: linear-gradient(180deg, #11EFE3 6.58%, #15E8E2 23.77%, #1FD3E0 45.12%, #21CFE0 58.66%);
-                border: none;
-                transform: scale(1.1);
+                border-color: transparent;
             }
             > div:nth-child(3) {
                 background: #0073E6;
-                border: none;
-                transform: scale(1.1);
+                border-color: transparent;
+            }
+        }
+        .purple:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
+            transform: scale(1.1);
+
+            > div:nth-child(1) {
+                background: linear-gradient(180deg, #0048E5 0%, #9B66FF 100%);
+                border: transparent;
+            }
+            > div:nth-child(2) {
+                background: linear-gradient(180deg, #11EFE3 14.35%, #21CFE0 73.56%);
+                border: transparent;
+            }
+            > div:nth-child(3) {
+                background: #9966FF;
+                border: transparent;
+            }
+        }
+        .yellow:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
+            transform: scale(1.1);
+
+            > div:nth-child(1) {
+                background: linear-gradient(180deg, #00A600 0.05%, #00D924 100%);
+                border: transparent;
+            }
+            > div:nth-child(2) {
+                background: linear-gradient(180deg, #FFD748 18.14%, #FFC148 100.07%);
+                border: transparent;
+            }
+            > div:nth-child(3) {
+                background: #00D924;
+                border: transparent;
+            }
+        }
+        .pink:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0px 7.56px 15.12px -7.56px #0000001A,  0px 12.6px 25.2px -11.57px #32325D40;
+            transform: scale(1.1);
+
+            > div:nth-child(1) {
+                background: linear-gradient(270deg, #0073E6 0%, #00299C 87.86%);
+                border: transparent;
+            }
+            > div:nth-child(2) {
+                background: linear-gradient(180deg, #FF80FF 15.99%, #FF7BF9 44.98%, #FF6EEA 82.97%, #FF62DC 105.96%);
+                border: transparent;
+            }
+            > div:nth-child(3) {
+                background-color: #0073E6;
+                border: transparent;
             }
         }
     }
