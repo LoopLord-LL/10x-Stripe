@@ -1,0 +1,49 @@
+footer{
+    
+    .footer-elements{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .elements{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            h2 a{
+                font-weight: 800;
+                font-size: 25px;
+            }
+            .copy{
+                margin-top: auto;
+            }
+            a{
+                font-size: 13.71px;
+                font-weight: 500;
+                line-height: 24px;
+                color: rgb(13, 51, 88);
+
+                &:hover{
+                    color: gray;
+                }
+            }
+            p{
+                color: rgb(0, 0, 0);
+                padding-bottom: 8px;
+
+            }
+            .title{
+                padding-top: 20px;
+            }
+            .logo-link{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                justify-content: flex-start;
+                padding-top: 6px;
+            }
+
+        }
+    }
+}
