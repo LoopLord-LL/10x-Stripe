@@ -1,0 +1,162 @@
+.built-growth{
+    background-color: rgb(243 246 250);                    ;
+
+    .built-content-wrapper{
+        .top-content{
+            display: flex;
+            flex-direction: column;
+            height: 236px;
+            gap: 24px;
+            padding-left: 16px;
+    
+            h3{
+                font-size: 16.17px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #635BFF;
+            }
+            h2{
+                color: #0A2540;
+                font-size: 33.99px;
+                font-weight: 700;
+                line-height: 48px;
+            }
+            p{
+                font-size: 16.59px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #425466;
+                width: 660px;
+            }
+        }
+    
+        .bottom-content{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 64px;   
+            .left, .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50%;
+                /* background-color: antiquewhite; */
+                gap: 80px;
+                padding-left: 16px;
+                .card{
+                    position: relative;
+                    width:508px;
+                    height: 553px;
+                    border-radius: 8px;
+                    background-color: white; 
+                    
+                    
+                    .upper-part{
+                        position: absolute;
+                        width: 98.5%;
+                        height: 60%;
+                        background-color: rgb(243 246 250);
+                        top: 4px;
+                        border-radius: 4px;
+                        left: 50%;
+                        transform: translate(-50%);
+
+                        .atlas-back{
+                            position: absolute;
+                            background: url(../media/images/atlas.png);
+                            /* background-size: cover; */
+                            width: 434px;
+                            height: 272px;
+                            top: 66px;
+                            left: 66px;
+                            background-repeat: no-repeat;
+                        }
+                        .pay-links{
+                            position: absolute;
+                            background: url(../media/images/pay-links.png);
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .checkout{
+                            position: absolute;
+                            background: url(../media/images/checkout.png);
+                            background-repeat: no-repeat;
+                            width: 434px;
+                            height: 272px;
+                            top: 66px;
+                            left: 66px;
+                        }
+                        .invoicing{
+                            position: absolute;
+                            background: url(../media/images/invoicing.png);
+                            background-repeat: no-repeat;
+                            width: 100%;
+                            height: 100%;
+                            top: 50px;
+                            left: 72px;
+                        }
+                    }
+    
+                    .down-part{
+                        position: absolute;
+                        width: 100%;
+                        height: 40%;
+                        /* background-color: white; */
+                        bottom: 0;
+                        padding-left: 32px;
+                        top: 369px;
+    
+                        .logo{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: rgb(246 249 252);
+                            width: 88px;
+                            padding: 10px 16px 10px 10px;
+                            gap: 12px;
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                        .payment-logo{
+                            width: 135px;
+                        }
+                        h3{
+                            font-size: 11.25px;
+                            font-weight: 500;
+                            line-height: 15px;
+                            color: rgba(46, 58, 85, 1);
+    
+                        }
+                        h2{
+                            padding-top: 8px;
+                            font-size: 24.07px;
+                            font-weight: 500;
+                            line-height: 36px;
+                            color: rgba(10, 37, 64, 1);
+                        }
+                        p{
+                            font-size: 16.31px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            color: rgba(66, 84, 102, 1);
+                            padding-top: 12px;
+                            width: 380px;
+                        }
+                    }
+                }
+                
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .left{
+                padding-top: 130px;
+            }
+            
+        }
+    }
+}
