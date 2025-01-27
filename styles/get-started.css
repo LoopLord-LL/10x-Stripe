@@ -1,0 +1,128 @@
+.get-started{
+    background-color: #F6F9FC;
+    width: 100%;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+    background-position: center;
+
+    .content-wrapper{
+        padding-top: 128px;
+        display: flex;
+        button{
+            font-size: 13.36px;
+            font-weight: 500;
+            line-height: 24px;
+            border: none;
+            background: none ;
+            color: #635BFF;
+            cursor: pointer;
+        }
+        a{
+            font-size: 16.45px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #635BFF;
+        }
+        p{
+            font-size: 16.45px;
+            font-weight: 500;
+            line-height: 28px;
+            color: #425466;
+        }
+        .left-content{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-left: 16px;
+            p{
+                padding-right: 130px;
+            }
+            h2{
+                font-size: 22.13px;
+                font-weight: 500;
+                line-height: 32px;
+                color: #0A2540;
+            }
+            .start-btn{
+                width: 112px;
+                height: 33px;
+                background-color: #635BFF;
+                border-radius: 17px;
+                color: #FFFFFF;
+                margin-right: 16px;
+                &:hover{
+                background-color: #0A2540;   
+                }
+            }
+     
+        }
+        .right-content{
+            display: flex;
+            width: 50%;
+            .content{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                justify-content: flex-end;
+                margin-bottom: 64px;
+                button{
+                    width: 117px;
+                    height: 33px;
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                h3{
+                    font-size: 14.06px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #0A2540;
+                    padding-top: 8px;
+                }
+                .prices{
+                    position: relative;
+                    .purple-price{
+                        position: absolute;
+                        left: 28px;
+                        top: -40px;
+                    }
+                    .blue-price{
+                        position: absolute;
+                        top: -23px;
+                        left: -26px;
+                    }
+                }
+                
+                .sticker{
+                    position: relative;
+                    .sticker1{
+                        position: absolute;
+                        top: -40px;
+                        left: 14px;
+                        width: 27px;
+                        height: 35px;
+                        background-color: #80E9FF;
+
+                    }
+                    .sticker2{
+                        position: absolute;
+                        top: -30px;
+                        left: 11px;
+                        width: 27px;
+                        height: 35px;
+                        background-color: #0048E5;
+                    }
+                    .sticker3{
+                        position: absolute;
+                        width: 27px;
+                        height: 35px;
+                        background-color: #7A73FF;
+                    }
+                }
+            }
+        }
+    
+    }
+        
+}
