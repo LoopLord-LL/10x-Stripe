@@ -11,14 +11,12 @@
         align-items: center;
         gap: 4px;
         margin-bottom: 12px;
+
         h3{
             font-size: 18px;
             font-weight: 500;
             color:#2E3A55;
-
         }
-        
-    
     }
     h2 {
         font-size: 37px;
@@ -79,6 +77,166 @@
     }
     
 }
+aside {
+    position: relative;
+
+    .abstraction-magazine-wrapper {
+      width: 254px;
+      height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF;
+      border-radius: 28px;
+      box-shadow: inset 0px -2px 7px 2px #0A254059, 0px 30px 60px -30px #0000004D, 0px 50px 100px -20px #32325D40;
+      position: absolute;
+      z-index: 3;
+      top: 70px;
+
+      .abstraction-magazine {
+        text-align: center;
+
+        h5 {
+          color: #0A2540;
+          font-size: 10.14px;
+          font-weight: 500;
+        }
+
+        h6 {
+          color: #425466;
+          font-size: 9.97px;
+          font-weight: 500;
+        }
+      }
+
+      button {
+        font-size: 10.66px;
+        width: 222px;
+        height: 24px;
+        border-radius: 4px;
+        background-color: #0A2540;
+        border: none;
+        color: #FFFFFF;
+        margin-top: 25px;
+        cursor: pointer;
+      }
+
+      .pay-wcard {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 9.8px;
+        width: 222px;
+        height: 12px;
+        background-color: #E6EBF1;
+        margin-top: 15px;
+        color: #425466;
+
+        span {
+          background-color: #FFFFFF;
+          width: 93px;
+          height: 12px;
+        }
+      }
+    }
+
+    form {
+      display: block;
+      margin-left: 15px;
+      line-height: 25px;
+
+      label {
+        font-size: 9.97px;
+        font-weight: 500;
+        color: #425466;
+      }
+
+      input {
+        height: 24px;
+        width: 222px;
+        border: 1px solid rgb(240, 235, 235);
+        border-radius: 4px;
+        box-shadow: 0 2px 3px -2px #2323411f;
+        outline: none;
+
+        &::placeholder {
+          font-size: 10.31px;
+          font-weight: 500;
+          color: #62788D;
+          padding-left: 5px;
+        }
+      }
+
+      .card_info_wrapper {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 35px;
+          left: 125px;
+        }
+
+        input {
+          border-radius: 0;
+          outline: none;
+        }
+
+        #card-number {
+          width: 223px;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+        }
+
+        #expire-date-input {
+          border-right: none;
+          border-bottom-left-radius: 4px;
+          border-top: none;
+        }
+
+        #CVC {
+          border-bottom-right-radius: 4px;
+          border-top: none;
+        }
+      }
+
+      .payment-fields {
+        display: flex;
+        gap: 0;
+        position: relative;
+
+        input {
+          width: 111px;
+        }
+
+        img {
+          position: absolute;
+          left: 202px;
+          top: 5px;
+        }
+      }
+
+      .countries {
+        select {
+          width: 224px;
+          height: 25px;
+          border: 1px solid rgb(240, 235, 235);
+          font-size: 10.14px;
+          font-weight: 500;
+          color: #62788D;
+          border-bottom: none;
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+        }
+
+        input {
+          border-radius: 0;
+          border-bottom-right-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+      }
+    }
+  }
 
     
 
