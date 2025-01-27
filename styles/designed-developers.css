@@ -1,0 +1,107 @@
+.developers-wrapper {
+    background-color: #0A2540;
+    .top-content {
+        /* width: 540px; */
+        /* height: 417px; */
+        padding: 16px;
+        
+        
+
+        .left {
+            width: 50%;
+            display: flex;
+        flex-direction: column;
+        gap: 24px;
+            h3 {
+                font-size: 17px;
+                color: #00D4FF;
+                font-weight: 500;
+                
+            }
+            h2 {
+                font-size: 36px;
+                color: #FFFFFF;
+                font-weight: 500;
+                padding-right: 64px;
+            }
+            p{
+                color: #ADBDCC;
+                size: 16px;
+                font-weight: 500;
+                padding-right: 81px;
+
+            }
+            button {
+                width: 144px;
+                height: 33px;
+                background-color: #00D4FF;
+                border-radius: 16.5px;
+                color: #0A2540;
+            }
+        }
+        .right{
+            width: 50%;
+    
+        }
+    }
+    .bottom-content {
+       padding: 16px; 
+       display: flex;
+
+      .blog {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-right: 42px;
+        align-items: flex-start;
+        
+        
+        
+        > img{
+            height: 40px;
+            /* padding-right:166px; */
+            margin-left: 16px;
+            
+        }
+
+
+        h3 {
+            font-size: 14px;
+            color: #FFFFFF;
+            font-weight: 500;
+            border-left: solid 2px #00D4FF;
+            padding-left: 14px;
+        
+        }
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            color: #ADBDCC;
+            /* padding-right: 50px; */
+            padding-left: 16px;
+
+        }
+        button {
+            color: #00D4FF;
+            font-size: 14px;
+            font-weight: 500;
+            /* padding-right: 134px; */
+            padding-left: 16px;
+        }
+        
+
+    }
+    button {
+         background-color:transparent;
+            box-shadow: none;
+            border: none;
+    }
+
+    button:hover {
+        color: white;
+    }
+       
+    }
+
+}
