@@ -4,7 +4,8 @@
         /* width: 540px; */
         /* height: 417px; */
         padding: 16px;
-        
+        display: flex;
+
         
 
         .left {
@@ -102,6 +103,17 @@
         color: white;
     }
        
+    }
+
+    .right {
+      
+        display: flex;
+        .top-section {
+            background-color: #0C2E4E;
+            width: 540px;
+            height: 273px;
+        }
+
     }
 
 }
