@@ -1,98 +1,115 @@
-.get-started{
+.get-started {
     background-color: #F6F9FC;
-    width: 1930px;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
     background-position: center;
+    position: relative;
     /* background-size: cover; */
-    .content-wrapper{
+
+    .content-wrapper {
         padding-top: 128px;
         padding-bottom: 287px;
         display: flex;
+
         /* align-items: center;
         justify-content: center; */
-        button{
+        button {
             font-size: 13.36px;
             font-weight: 500;
             line-height: 24px;
             border: none;
-            background: none ;
+            background: none;
             color: #635BFF;
             cursor: pointer;
         }
-        a{
+
+        a {
             font-size: 16.45px;
             font-weight: 500;
             line-height: 28px;
             color: #635BFF;
         }
-        p{
+
+        p {
             font-size: 16.45px;
             font-weight: 500;
             line-height: 28px;
             color: #425466;
         }
-        .left-content{
+
+        .left-content {
             width: 50%;
             display: flex;
             flex-direction: column;
             gap: 24px;
             padding-left: 16px;
-            p{
+
+            p {
                 padding-right: 130px;
             }
-            h2{
+
+            h2 {
                 font-size: 22.13px;
                 font-weight: 500;
                 line-height: 32px;
                 color: #0A2540;
             }
-            .start-btn{
+
+            .start-btn {
                 width: 112px;
                 height: 33px;
                 background-color: #635BFF;
                 border-radius: 17px;
                 color: #FFFFFF;
                 margin-right: 16px;
-                &:hover{
-                background-color: #0A2540;   
+
+                &:hover {
+                    background-color: #0A2540;
                 }
             }
-     
+
         }
-        .right-content{
+
+        .right-content {
             display: flex;
             width: 50%;
-            .content{
+
+            .content {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                button{
+
+                button {
                     width: 117px;
                     height: 33px;
                     /* display: flex; */
-                    
+
                 }
-                .title{
+
+                .title {
                     display: flex;
                     align-items: center;
                 }
-                h3{
+
+                h3 {
                     font-size: 14.06px;
                     font-weight: 500;
                     line-height: 24px;
                     color: #0A2540;
                     padding-left: 16px;
                 }
-                p{
+
+                p {
                     padding-left: 16px;
                 }
-                .border{
+
+                .border {
                     border-left: 1px solid rgba(99, 91, 255, 1);
                     height: 15px;
                 }
-                .prices{
+
+                .prices {
                     .tag {
                         width: 30px;
                         height: 32px;
@@ -100,12 +117,12 @@
                         clip-path: polygon(50% 10%, 50% 10%, 80% 38%, 80% 100%, 20% 100%, 20% 38%);
                         position: relative;
                         mix-blend-mode: multiply;
-                        transform-origin: center; 
+                        transform-origin: center;
                         transition: transform 2s ease;
                     }
-                      
-                      
-                      .tag::before {
+
+
+                    .tag::before {
                         content: '';
                         position: absolute;
                         top: 35%;
@@ -113,12 +130,12 @@
                         right: 50%;
                         transform: translate(-50%, -50%);
                         width: 5px;
-                        height: 5px;    
+                        height: 5px;
                         background: white;
                         border-radius: 50%;
-                      }
-                      
-                      .tag2 {
+                    }
+
+                    .tag2 {
                         width: 30px;
                         height: 32px;
                         background-color: rgb(128 233 255);
@@ -130,10 +147,10 @@
                         left: -4px;
                         transform-origin: center;
                         transition: transform 2s ease;
-                        
-                      }
-                  
-                      .tag2::before {
+
+                    }
+
+                    .tag2::before {
                         content: '';
                         position: absolute;
                         top: 35%;
@@ -144,13 +161,14 @@
                         height: 5px;
                         background: white;
                         border-radius: 50%;
-                      }
+                    }
 
                 }
-                
-                .sticker{
+
+                .sticker {
                     position: relative;
-                    .sticker1{
+
+                    .sticker1 {
                         position: absolute;
                         top: -40px;
                         left: 14px;
@@ -160,7 +178,8 @@
                         mix-blend-mode: multiply;
                         border-radius: 4px;
                     }
-                    .sticker2{
+
+                    .sticker2 {
                         position: absolute;
                         width: 27px;
                         height: 35px;
@@ -173,6 +192,5 @@
                 }
             }
         }
-    
     }
 }
