@@ -257,7 +257,10 @@
                         </p>
 
 
-                        <button>Start with Payments <img src="assets/images/payments/arrow.png" alt=""></button>
+                        <button>
+                            Start with Payments
+                            <div class="arrow"></div>
+                        </button>
                         <div class="left1">
                             <h5>See also</h5>
                             <p><span><a href="#">Tax</a></span> for automating sales tax and VAT</p>
@@ -267,9 +270,9 @@
                         </div>
                     </div>
                     <aside>
-                        <div class="abstraction-magazine-wrapper">
+                        <div class="online-shop">
                           <img src="./media/images/chair.png" alt="chairimg">
-                            <div class="abstraction-magazine">
+                            <div class="item">
                                 <h5>Wood Chair 001</h5>
                                 <h6>$149</h6>
                             </div>
@@ -280,14 +283,16 @@
                                 <img src="./media/images/lock_icon.png" alt="lock_icon">
                             </button>
                             <div class="pay-wcard">
-                                <span>Or pay with card</span>
+                                <span>Or pay another way</span>
                             </div>
-                            <form action="#">
+                            <form action="#" class="payment-form">
                                 <label for="email">Email</label>
-                                <input type="text" id="email" placeholder="jane.diaz@example.com">
-    
+                                <div>
+                                    <input type="text" id="email" placeholder="jane.diaz@example.com">
+                                </div>
                                 <div class="card_info_wrapper">
-                                    <img src="./media/images/visa.png" alt="visa">
+                                    <img src="./media/images/visa-icon.svg" alt="visa-icon">
+                                    <img src="./media/images/visa-bg.svg" alt="visa-bg">
                                     <label for="card-number">Card information</label>
                                     <input id="card-number" type="tel" placeholder="4242 4242 4242 4242" maxlength="16">
     
