@@ -83,7 +83,7 @@
         button {
             --primary-color: #635BFF;
             --secondary-color: #fff;
-            --hover-color: #111;
+            --hover-color: #0A2540;
             --arrow-width: 10px;
             --arrow-stroke: 2px;
             box-sizing: border-box;
@@ -182,11 +182,10 @@
         }
     }
     aside{
+        margin-left: 5px;
         border: 1.19px solid #C4CCD8;
         width: 331px;
         height: 516.74px;
-        min-width: 119.06px;
-        min-height: 85.73px;
         border-radius: 9.53px;
         position: relative;
         background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
@@ -489,7 +488,7 @@
                 position: absolute; 
                 z-index: 10;
                 border: none;
-                transition: ease 0.3s;
+                
             } 
             > div:nth-child(2){
                 width: 11px;
@@ -500,7 +499,7 @@
                 z-index: 3;
                 border-radius: 100% 100% 2px 100% ;
                 border: 1.83px solid  #C4CCD8;   
-                transition: ease 0.3s;
+                
             }
             > div:nth-child(3) {
                 width: 11px;
@@ -511,7 +510,7 @@
                 position: absolute;
                 z-index: 2;
                 border: 1.83px solid #C4CCD8;
-                transition: ease 0.3s;
+                
             }
         }
 
@@ -560,11 +559,11 @@
             }
             > div:nth-child(2) {
                 background: linear-gradient(180deg, #11EFE3 14.35%, #21CFE0 73.56%);
-                border: transparent;
+                border-color: transparent;
             }
             > div:nth-child(3) {
                 background: #9966FF;
-                border: transparent;
+                border-color: transparent;
             }
         }
         .yellow:hover {
@@ -578,11 +577,11 @@
             }
             > div:nth-child(2) {
                 background: linear-gradient(180deg, #FFD748 18.14%, #FFC148 100.07%);
-                border: transparent;
+                border-color: transparent;
             }
             > div:nth-child(3) {
                 background: #00D924;
-                border: transparent;
+                border-color: transparent;
             }
         }
         .pink:hover {
@@ -596,11 +595,11 @@
             }
             > div:nth-child(2) {
                 background: linear-gradient(180deg, #FF80FF 15.99%, #FF7BF9 44.98%, #FF6EEA 82.97%, #FF62DC 105.96%);
-                border: transparent;
+                border-color: transparent;
             }
             > div:nth-child(3) {
-                background-color: #0073E6;
-                border: transparent;
+                background: #0073E6;
+                border-color: transparent;
             }
         }
     }
