@@ -1,120 +1,178 @@
-/* .launch-ease {
+.launch-ease {
     >div:first-child {
-        h4 {
-            font-size: 16.88px;
+        margin-left: 16px;
+
+        h5 {
+            font-size: 16.9px;
             font-weight: 500;
-            letter-spacing: 0.20000000298023224px;
+            letter-spacing: 0.2px;
             color: #635BFF;
         }
 
-        h3 {
-            font-size: 35.77px;
+        h2 {
+            font-size: 35.8px;
             font-weight: 500;
-            letter-spacing: -0.20000000298023224px;
+            letter-spacing: 0.2px;
             color: #0A2540;
-            width: 682px;
-            height: 96px;
+            max-width: 682px;
+            margin-top: 24px;
         }
 
         p {
-            font-size: 16.45px;
+            font-size: 16.5px;
             font-weight: 500;
-            letter-spacing: 0.20000000298023224px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
             color: #425466;
-            width: 682px;
-            height: 56px;
+            max-width: 682px;
+            margin-top: 24px;
         }
     }
 
     >div:last-child {
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 68px;
+        margin-left: 16px;
+        margin-right: 16px;
 
-        .use,
-        .build,
-        .try {
-            width: 338.66px;
-            height: 528.41px;
-            border-radius: 8px;
-            border: 1px solid red;
+        .card {
             background-color: #FFFFFF;
             box-shadow: 0px 30px 45px -30px #32325D40, 0px 18px 36px -18px #0000001A;
-            position: relative;
-        
+            border-radius: 8px;
+            padding: 4px;
+            max-width: 330px;
+            max-height: 500px;
+            overflow: hidden;
 
-            img {
-                width: 330.66px;
-                height: 220.44px;
-                border-radius: 4px;
-                opacity: 0.3px;
-                position: absolute;
-                z-index: 1;
+            .card-image {
+                overflow: hidden;
+                border-radius: 8px;
+                transition: transform 0.3s ease;
+
+                img {
+                    width: 100%;
+                    transition: transform 0.3s ease;
+                }
             }
 
-            div {
-                width: 275.66px;
-                height: 247.97px;
-                padding: 30px;
-                position: absolute;
-                z-index: 2;
+            .card-content {
                 background-color: #FFFFFF;
-                top: 240px;
-                h4 {
-                    width: 290.66px;
-                    height: 72px;
+                max-width: 290px;
+                padding: 24px;
+                transition: transform 0.3s ease;
+
+                h3 {
                     font-size: 24.17px;
                     font-weight: 500;
                     color: #0A2540;
-                    line-height: 36px;
                 }
-    
-                P {
-                    width: 290.66px;
-                    height: 72px;
-                    font-size: 16.17px;
+
+                p {
+                    font-size: 16.2px;
                     font-weight: 500;
-                    letter-spacing: 0.20000000298023224px;
-                    color: #425466;
                     line-height: 28px;
-    
-                    span {
+                    letter-spacing: 0.2px;
+                    color: #425466;
+                    margin-top: 12.47px;
+
+                    a {
                         color: #635BFF;
+                        transition: 0.2s ease;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: #0A2540;
+                        }
+                    }
+                }
+
+                .use,
+                .try,
+                .build {
+                    background-color: transparent;
+                    border: none;
+                    gap: 5px;
+                    color: #635BFF;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+                    margin-top: 100px;
+
+                    h5 {
+                        font-size: 15px;
+                        font-weight: 600;
+                        transition: color 0.5s ease;
+
+                    }
+
+                    .arrow {
+                        width: 10px;
+                        height: 2px;
+                        position: relative;
+                        transition: 0.2s;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            border: solid;
+                            border-width: 0px 2px 2px 0px;
+                            top: -3px;
+                            right: 3px;
+                            transition: 0.2s;
+                            padding: 3px;
+                            transform: rotate(-45deg);
+                            box-sizing: border-box;
+                            display: inline-block;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #0A2540;
+
+                        .arrow {
+                            background: #0A2540;
+                        }
+
+                        .arrow::before {
+                            right: 0px;
+                            color: #0A2540;
+                        }
                     }
                 }
             }
-        }
-    }
-} */
 
-.launch-ease{
-    display: flex;
-    flex-direction: column;
-    height: 820px;
-    width: 100%;
-    .top-content{
-        height: 27%;
-        background-color: red;
-    }
-    .bottom-content{
-        height: 73%;
-        background-color: green;
-        display: flex;
-        gap: 16px;
-        padding: 0 16px;
-        .card{
-            background-color: azure;
-            height: 100%;
-            width: 33%;
-            display: flex;
-            flex-direction: column;
+            &:hover {
 
-            .image{
-                height: 224px;
-                background-color: aqua;
-            }
+                .use,
+                .build,
+                .try {
+                    opacity: 1;
+                }
 
-            .text{
-                height: 248px;
-                background-color: black;
-                margin-top: 23px;
+                .use {
+                    transform: translateY(-15px);
+                }
+
+                .build {
+                    transform: translateY(10px);
+                }
+
+                .try {
+                    transform: translateY(-70px);
+                }
+
+                .card-image img {
+                    transform: translateY(-20px);
+                }
+
+                .card-content {
+                    transform: translateY(-53px);
+                }
             }
         }
     }
