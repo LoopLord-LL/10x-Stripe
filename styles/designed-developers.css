@@ -1,54 +1,74 @@
-.developers-wrapper {
-    background-color: #0A2540;
+.designed-developers {
+  background-color: #0a2540;
+  .developers-wrapper {
     .top-content {
-        /* width: 540px; */
-        /* height: 417px; */
-        padding: 16px;
+      padding: 16px;
+      display: flex;
+      .left {
+        width: 50%;
         display: flex;
-
-        
-
-        .left {
-            width: 50%;
-            display: flex;
         flex-direction: column;
         gap: 24px;
-            h3 {
-                font-size: 17px;
-                color: #00D4FF;
-                font-weight: 500;
-                
-            }
-            h2 {
-                font-size: 36px;
-                color: #FFFFFF;
-                font-weight: 500;
-                padding-right: 64px;
-            }
-            p{
-                color: #ADBDCC;
-                size: 16px;
-                font-weight: 500;
-                padding-right: 81px;
-
-            }
-            button {
-                width: 144px;
-                height: 33px;
-                background-color: #00D4FF;
-                border-radius: 16.5px;
-                color: #0A2540;
-            }
+        h3 {
+          font-size: 17px;
+          color: #00d4ff;
+          font-weight: 500;
         }
-        .right{
-            width: 50%;
-    
+        h2 {
+          font-size: 36px;
+          color: #ffffff;
+          font-weight: 500;
+          padding-right: 64px;
         }
+        p {
+          color: #adbdcc;
+          size: 16px;
+          font-weight: 500;
+          padding-right: 81px;
+        }
+        button {
+          width: 144px;
+          height: 33px;
+          background-color: #00d4ff;
+          border-radius: 16.5px;
+          border: none;
+          color: #0a2540;
+          cursor: pointer;
+          &:hover {
+            background-color: #fff;
+          }
+        }
+      }
+      .right {
+        width: 50%;
+        position: relative;
+        .editor {
+          .input {
+            border-radius: 8px;
+            background-color: rgb(12 46 78);
+            position: absolute;
+            z-index: 1;
+          }
+          .server {
+            position: absolute;
+            top: 245px;
+            z-index: 3;
+          }
+          .output {
+            border-radius: 8px;
+            background-color: rgb(6 24 44);
+            position: absolute;
+            top: 264px;
+            padding: 10px 0 50px 0px;
+            z-index: 1;
+          }
+        }
+      }
     }
     .bottom-content {
-       padding: 16px; 
-       display: flex;
-
+      padding: 16px;
+      display: flex;
+      margin-top: 96px;
       .blog {
         width: 270px;
         display: flex;
@@ -56,64 +76,46 @@
         gap: 8px;
         padding-right: 42px;
         align-items: flex-start;
-        
-        
-        
-        > img{
-            height: 40px;
-            /* padding-right:166px; */
-            margin-left: 16px;
-            
-        }
 
+        > img {
+          height: 40px;
+          /* padding-right:166px; */
+          margin-left: 16px;
+        }
 
         h3 {
-            font-size: 14px;
-            color: #FFFFFF;
-            font-weight: 500;
-            border-left: solid 2px #00D4FF;
-            padding-left: 14px;
-        
+          font-size: 14px;
+          color: #ffffff;
+          font-weight: 500;
+          border-left: solid 1px #00d4ff;
+          padding-left: 14px;
         }
         p {
-            font-size: 14px;
-            font-weight: 500;
-            color: #ADBDCC;
-            /* padding-right: 50px; */
-            padding-left: 16px;
-
+          font-size: 14px;
+          font-weight: 500;
+          color: #adbdcc;
+          /* padding-right: 50px; */
+          padding-left: 16px;
         }
         button {
-            color: #00D4FF;
-            font-size: 14px;
-            font-weight: 500;
-            /* padding-right: 134px; */
-            padding-left: 16px;
+          color: #00d4ff;
+          font-size: 14px;
+          font-weight: 500;
+          /* padding-right: 134px; */
+          padding-left: 16px;
+          cursor: pointer;
         }
-        
+      }
+      button {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+      }
 
-    }
-    button {
-         background-color:transparent;
-            box-shadow: none;
-            border: none;
-    }
-
-    button:hover {
+      button:hover {
         color: white;
+      }
     }
-       
-    }
-
-    .right {
-      
-        display: flex;
-        .top-section {
-            background-color: #0C2E4E;
-            width: 540px;
-            height: 273px;
-        }
-
-    }
-
+  }
 }

@@ -1,112 +1,233 @@
-.enterprise-reinvention{
-    height: 908px;
-    .content{
-        height: 908px;
+.enterprise-reinvention {
+    .content {
+      .top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
         padding-left: 16px;
-        .top{
-            height: 294px;
-
-            h3{
-                font-size: 16.45px;
-                font-weight: 500;
-                line-height: 28px;
-                color: #635BFF;
-
+  
+        h3 {
+          font-size: 16.45px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #635bff;
+        }
+        h2 {
+          font-size: 34.73px;
+          font-weight: 500;
+          line-height: 48px;
+          color: #0a2540;
+        }
+        p {
+          font-size: 16.45px;
+          font-weight: 500;
+          line-height: 28px;
+          color: #425466;
+          padding-bottom: 24px;
+          a {
+            text-decoration: none;
+            color: #635bff;
+            &:hover {
+              color: black;
             }
-            h2{
-                font-size: 34.73px;
+          }
+        }
+      }
+      button {
+        width: 185px;
+        height: 33px;
+        background-color: #635bff;
+        border-radius: 16px;
+        font-size: 14px;
+        color: #ffffff;
+        cursor: pointer;
+        border: none;
+  
+        &:hover {
+          background-color: #0a2540;
+        }
+      }
+  
+      .bottom {
+        #bmwCard {
+          display: flex;
+        }
+        #amazonCard {
+          display: none;
+        }
+        #maerskCard {
+          display: none;
+        }
+        #twilioCard {
+          display: none;
+        }
+        .top-side {
+          display: flex;
+          padding-top: 84px;
+          padding-left: 16px;
+          .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            width: 25%;
+  
+            .text {
+              .number {
+                font-size: 24px;
                 font-weight: 500;
-                line-height: 48px;
-                color: #0A2540;
-                padding-top:  24px;
-            }
-            p{
-                font-size: 16.45px;
+                line-height: 31.92px;
+                color: #0a2540;
+              }
+              p {
+                font-size: 13.83px;
                 font-weight: 500;
-                line-height: 28px;
-                color:  #425466;
+                line-height: 24px;
+                color: #425466;
+              }
+              .products {
+                font-size: 13.95px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #0a2540;
                 padding-bottom: 24px;
-                a{
-                    color: #635BFF;
-                    &:hover{
-                        color: black;
-                    }
-                }
-            }
-        }
-        button {
-            width: 185px;
-            height: 33px;
-            background-color: #635BFF;
-            border-radius: 16px;
-            font-size: 14px;
-            color: #FFFFFF;
-            cursor: pointer;
-            border: none;
-
-            &:hover{
-            background-color: #0A2540;
-            }
-        }
-
-        .bottom{
-            .top-side{
+              }
+              .pay {
                 display: flex;
-
-                .text-wrapper{
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: repeat(3, 1fr);
-                    
-                    .text{
-                        .number{
-                            font-size: 24px;
-                            font-weight: 500;
-                            line-height: 31.92px;
-                            color: #0A2540;
-                        }
-                        p{
-                            font-size: 13.83px;
-                            font-weight: 500;
-                            line-height: 24px;
-                            color: #425466;
-                        }
-                        .products{
-                            font-size: 13.95px;
-                            font-weight: 500;
-                            line-height: 24px;
-                            color: #0A2540;
-                            padding-bottom: 24px;
-                        }
-                        .pay{
-                            display: flex;
-                            align-items: center;
-                            gap: 14px;
-                            color: #425466;
-                            font-size: 15px;
-                            font-weight: 500;
-                            line-height: 18.15px;
-                        }
-                        .connect{
-                            padding-top: 12px;             
-                        }
-                    }
-                }
-                
+                align-items: center;
+                gap: 14px;
+                color: #425466;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 18.15px;
+              }
+              .connect {
+                padding-top: 12px;
+              }
             }
-
-            .bottom-side{
-               height: 100px;
-               display: flex;
-               align-items: center;
-                img{
-                    cursor: pointer;
-                }
-               .amazon{
-                border-top: 1px solid orange;
-
-               }
+          }
+  
+          .amazon-img {
+            background: linear-gradient(
+              to top,
+              rgb(255, 172, 28),
+              rgb(255, 197, 98)
+            );
+          }
+          .bmw-img {
+            background: linear-gradient(
+              to top,
+              rgb(73, 103, 255),
+              rgb(20, 70, 208)
+            );
+          }
+          .maersk-img {
+            background: linear-gradient(
+              to top,
+              rgb(157, 173, 255),
+              rgb(141, 171, 255)
+            );
+          }
+          .twilio-img {
+            background: linear-gradient(
+              to top,
+              #b61818 0%,
+              #b61818 5%,
+              #b61818 10%,
+              #b61818 15%,
+              #ff6347 40%,
+              #ff6666 70%,
+              #e47676 100%
+            );
+          }
+  
+          .image {
+            position: relative;
+            cursor: pointer;
+            width: 75%;
+            transition: all 0.5s ease-in-out;
+            &:hover div {
+              margin-bottom: 35px;
             }
+            &:hover button {
+              opacity: 1;
+              top: 306px;
+            }
+            button {
+              position: absolute;
+              left: -32px;
+              top: 348px;
+              border: none;
+              background: none;
+              opacity: 0;
+              transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+            }
+            .back-image {
+              opacity: 0.5;
+              height: 100%;
+              width: 100%;
+            }
+            .frame {
+              position: absolute;
+              right: 24px;
+              top: 24px;
+              opacity: 1;
+              cursor: pointer;
+            }
+            .logo {
+              position: absolute;
+              left: 24px;
+              top: 24px;
+              opacity: 1;
+            }
+            div {
+              position: absolute;
+              left: 24px;
+              bottom: 24px;
+              opacity: 1;
+              padding-right: 230px;
+              font-size: 24.58px;
+              font-weight: 500;
+              color: rgba(255, 255, 255, 1);
+              transition: margin-bottom 0.5s ease-in-out, color 0.3s ease-in-out;
+            }
+          }
         }
+  
+        .bottom-side {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: 100px;
+  
+          img {
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: border-top 0.3s ease-in-out;
+            padding: 15px;
+          }
+  
+          .bmw {
+            border-top-color: transparent;
+          }
+  
+          .bmw.active {
+            border-top-color: #0066b6;
+          }
+  
+          .amazon.active {
+            border-top-color: #dfaa5c;
+          }
+  
+          .maersk.active {
+            border-top-color: #0093d0;
+          }
+  
+          .twilio.active {
+            border-top-color: #f22f46;
+          }
+        }
+      }
     }
-}
+  }
+  
