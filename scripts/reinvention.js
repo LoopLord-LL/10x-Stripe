@@ -48,8 +48,8 @@ function addTwilio() {
 
 // Function to activate an image
 function activateImage(index) {
-  images.forEach((img) => img.classList.remove("active")); // Remove active from all
-  images[index].classList.add("active"); // Add active class to selected image
+  images.forEach((img) => img?.classList.remove("active")); // Remove active from all
+  images[index]?.classList.add("active"); // Add active class to selected image
   displays[index](); // Change the displayed section
   currentIndex = index; // Update index
 }
@@ -65,7 +65,7 @@ function startTimer() {
 
 // Add event listeners to images for manual selection
 images.forEach((img, index) => {
-  img.addEventListener("click", function () {
+  img && img.addEventListener("click", function () {
     if (!this.classList.contains("active")) {
       activateImage(index); // Activate clicked image
       startTimer(); // Restart the timer after user interaction
@@ -78,3 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   activateImage(0); // Start with BMW
   startTimer(); // Start the auto-switch
 });
+
+// ------------------------------------
+
+
