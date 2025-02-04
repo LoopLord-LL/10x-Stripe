@@ -116,6 +116,27 @@
         gap: 5px;
         align-items: center;
 
+        .arrow {
+          width: 10px;
+          height: 2px;
+          position: relative;
+          transition: 0.2s;
+          
+          &::before {
+            content: "";
+            position: absolute;
+            border: solid;
+            border-width: 0px 2px 2px 0px;
+            top: -3px;
+            right: 3px;
+            transition: 0.2s;
+            padding: 3px;
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+            display: inline-block;
+          }
+        }
+
         &:last-child {
           font-size: 13.83px;
           color: #E17537;
@@ -125,7 +146,22 @@
 
         &:hover {
           opacity: 0.6;
+          transition: 0.1s ease;
           cursor: pointer;
+          
+          .arrow::before {
+            right: 0px;
+          }
+        }
+        &:first-child:hover {
+          .arrow {
+            background: #FFFFFF;  
+          }
+        }
+        &:last-child:hover {
+          .arrow {
+            background: #E17537;  
+          }
         }
       }
     }
@@ -178,35 +214,77 @@
         button {
           width: 111.64px;
           height: 33px;
-
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          
+          .arrow {
+            width: 10px;
+            height: 2px;
+            position: relative;
+            transition: 0.2s;
+            
+            &::before {
+              content: "";
+              position: absolute;
+              border: solid;
+              border-width: 0px 2px 2px 0px;
+              top: -3px;
+              right: 3px;
+              transition: 0.2s;
+              padding: 3px;
+              transform: rotate(-45deg);
+              box-sizing: border-box;
+              display: inline-block;
+            }
+          }
+        
           &:first-child {
             border-radius: 16.5px;
             background-color: #0A2540;
             color: #FFFFFF;
             border: none;
-            display: flex;
             justify-content: center;
-            align-items: center;
             gap: 10px;
-            cursor: pointer;
+        
+            .arrow::before {
+              border-color: #FFFFFF;
+            }
           }
-
+        
           &:last-child {
             background-color: transparent;
             border: none;
-            display: flex;
-            align-items: center;
-            gap: 30px;
+            gap: 20px;
             color: #0A2540;
             text-align: left;
             line-height: 20px;
-            cursor: pointer;
+        
+            .arrow::before {
+              border-color: #0A2540;
+            }
           }
 
+        
           &:hover {
             opacity: 0.6;
+            transition: 0.1s ease;
+            
+            .arrow::before {
+              right: 0px;
+            }
           }
-        }
+          &:first-child:hover {
+            .arrow {
+              background: #FFFFFF;  
+            }
+          }
+          &:last-child:hover {
+            .arrow {
+              background: #0A2540;  
+            }
+          }
+        } 
       }
     }
 
@@ -291,6 +369,7 @@
           border: 1px solid rgb(240, 235, 235);
           border-radius: 4px;
           box-shadow: 0 2px 3px -2px #2323411f;
+          outline: none;
 
           &::placeholder {
             font-size: 10.31px;
@@ -311,6 +390,7 @@
 
           input {
             border-radius: 0;
+            outline: none;
           }
 
           #card-number {
@@ -407,6 +487,8 @@
           width: 278px;
           height: 20px;
           border: none;
+          padding-left: 20px;
+          outline: none;
 
           &::placeholder {
             font-size: 10.14px;
@@ -474,7 +556,7 @@
                 }
               }
 
-              h1 {
+              h3 {
                 font-size: 13.23px;
                 font-weight: 500;
                 color: #0A2540;
@@ -517,7 +599,7 @@
             display: flex;
             gap: 10px;
 
-            h1 {
+            h5{
               font-size: 11.25px;
               font-weight: 500;
               letter-spacing: -0.10000000149011612px;

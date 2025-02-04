@@ -37,14 +37,13 @@
                     </ul>
                 </div>
                 <div>
-                    <button>Contact sales <img src="./media/images/SVG.svg" alt="arrow1"></button>
                     <button>
-                        Sign in
-                        <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#E17537"
-                                stroke-width="2" />
-                        </svg>
+                        Contact sales 
+                        <div class="arrow"></div>
+                    </button>
+                    <button>
+                        Sign in 
+                        <div class="arrow"></div>
                     </button>
                 </div>
             </nav>
@@ -56,14 +55,13 @@
                         financial processes, and ultimately grow revenue.
                     </p> <br>
                     <div>
-                        <button>Start now <img src="./media/images/SVG.svg" alt="arrow"></button>
+                        <button>
+                            Start now
+                            <div class="arrow"></div>
+                        </button>
                         <button>
                             Contact <br> sales
-                            <svg class="orange-arrow" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.92285 1.14258L5.92285 5.14258L1.92285 9.14258" stroke="#0A2540"
-                                    stroke-width="2" />
-                            </svg>
+                            <div class="arrow"></div>
                         </button>
                     </div>
                 </article>
@@ -130,7 +128,7 @@
                                             <h6>Net volume</h6>
                                             <img src="./media/images/arrow-blue.png" alt="">
                                         </div>
-                                        <h1>$3,528,198.72</h1>
+                                        <h3>$3,528,198.72</h3>
                                         <h5>2:00 PM</h5>
                                     </div>
                                     <div>
@@ -146,7 +144,7 @@
 
                             <div class="progress sales">
                                 <div>
-                                    <h1>Net volume from sales</h1>
+                                    <h5>Net volume from sales</h5>
                                     <h2>+32.8%</h2>
                                 </div>
                                 <div>
@@ -159,7 +157,7 @@
 
                             <div class="progress costumers">
                                 <div>
-                                    <h1>New customers</h1>
+                                    <h5>New customers</h5>
                                     <h2>+32.1%</h2>
                                 </div>
                                 <div>
@@ -207,8 +205,7 @@
 
                 </div>
 
-
-            </section>
+        </section>
 
             <div class="main-content container-wrapper">
 
@@ -446,6 +443,90 @@
                 <!-- connect -->
                 <section class="connect container">
 
+                    <article>
+                        <div>
+                            <div class="connect-icon-wrapper">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h3>Connect</h3>
+                        </div>
+                        <h1>Set up multiparty <br>
+                            payments and payouts</h1>
+                        <h2>Integrate payments into your platform or marketplace <br>
+                            for end-to-end payments experiences.</h2>  
+                            <!-- From Uiverse.io by satyamchaudharydev --> 
+                        <button>
+                            Start with Connect
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
+
+                            </div>
+                        </button>
+                        <h6>See also</h6> 
+                        <span>
+                            <h5>Terminal</h5>
+                            <h4>for custom in-person payments</h4>
+                        </span>
+                        <span>
+                            <h5>Instant Payouts </h5>
+                            <h4>for fast payments to users</h4>
+                        </span>
+                        <span>
+                            <h5>Payment Elements</h5>
+                            <h4>for customizable UIs</h4>
+                        </span>
+                    </article>
+                    <aside>
+                         <div class="hanako-yamada-wrapper">
+                            <div></div>
+                            <div>
+                                <span>
+                                    <h4>#9125</h4>
+                                    <h3>Hanako Yamada</h3>
+                                </span>
+                                <h2>$150.00</h2>
+                                <button>Processing</button>
+                            </div> 
+                        </div>
+                        <div class="jacques-muller-wrapper">
+                            <div></div>
+                            <div>
+                                <span>
+                                    <h4>#9124</h4>
+                                    <h3>Jacques Muller</h3>
+                                </span>
+                                <h2>$200.00</h2>
+                                <button>Processing</button>
+                            </div> 
+                        </div>
+                        <div>
+                            <button>
+                                Buyers
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                            <div class="money buyers">$150.00</div>
+                            <div id="arrows">
+                            </div>
+                            <button>
+                                Platform
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                            <div class="platform">$4.50</div>
+                            <div class="money sellers">$145.50</div>
+                            <div id="arrows">
+                            </div>    
+                            <button>
+                                <img src="./media/images/check-icon.png" alt="check-icon">
+                                Sellers or service providers
+                            </button>
+                            <div class="dashed-border">
+                            </div>
+                        </div>
+                    </aside>
                 </section>
 
                 <!-- issuing -->
@@ -1082,24 +1163,9 @@
 
             </div>
         </footer>
-
-        <script>
-            const input = document.getElementById("expire-date-input");
-
-            input.addEventListener("input", (event) => {
-                let value = input.value;
-
-                value = value.replace(/[^0-9/]/g, "");
-                // Automatically insert slash after 2 digits
-                if (value.length === 2 && !value.includes("/")) {
-                    value += "/";
-                }
-                // Limit length to 5 characters (MM/YY)
-                input.value = value.slice(0, 5);
-            });
-        </script>
-            <script src="./scripts/header.js"></script>
-            <script src="./scripts/reinvention.js"></script>
+          <script src="./scripts/header.js"></script>
+          <script src="./scripts/reinvention.js"></script>
+          <script src="./scripts/connect.js"></script>  
 </body>
 
 </html>
