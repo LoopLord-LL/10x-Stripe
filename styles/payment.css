@@ -119,9 +119,8 @@
 
 }
 
-aside {
+.payment-aside {
   margin-left: 100px;
-
   .online-shop {
     width: 299px;
     height: 613px;
