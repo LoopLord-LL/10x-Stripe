@@ -526,26 +526,6 @@
                             <div class="dashed-border">
                             </div>
                         </div>
-                        <div class="icon-wrapper circle blue">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="icon-wrapper circle purple">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="icon-wrapper circle yellow">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="icon-wrapper circle pink">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
                     </aside>
                 </section>
 
@@ -1183,57 +1163,9 @@
 
             </div>
         </footer>
-
-            <script src="./scripts/header.js"></script>
-            <script src="./scripts/reinvention.js"></script>
-            <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                    // Expiry date input event listener
-                    const input = document.getElementById("expire-date-input");
-            
-                    if (input) {
-                        input.addEventListener("input", (event) => {
-                            let value = input.value;
-            
-                            // Allow only numbers and slashes
-                            value = value.replace(/[^0-9/]/g, "");
-                            // Automatically insert slash after 2 digits
-                            if (value.length === 2 && !value.includes("/")) {
-                                value += "/";
-                            }
-                            // Limit length to 5 characters (MM/YY)
-                            input.value = value.slice(0, 5);
-                        });
-                    } else {
-                        console.error('Element with ID "expire-date-input" not found.');
-                    }
-            
-                    // SVG content definition
-                    const svgContent = `
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.178 19.569C11.2697 19.7022 11.3925 19.8112 11.5357 19.8864C11.6789 19.9617 11.8382 20.001 12 20.001C12.1618 20.001 12.3211 19.9617 12.4643 19.8864C12.6075 19.8112 12.7303 19.7022 12.822 19.569L21.822 6.569C21.9262 6.41906 21.9873 6.24343 21.9986 6.06121C22.01 5.87898 21.9712 5.69712 21.8865 5.53539C21.8018 5.37366 21.6743 5.23825 21.518 5.14386C21.3617 5.04947 21.1826 4.99971 21 5H3C2.81784 5.00075 2.63934 5.05115 2.48368 5.14576C2.32802 5.24038 2.2011 5.37564 2.11657 5.53699C2.03203 5.69835 1.99308 5.8797 2.00391 6.06153C2.01473 6.24337 2.07492 6.41881 2.178 6.569L11.178 19.569Z" fill="currentColor"/>
-                        </svg>
-                    `;
-            
-                    // Target the div with ID 'arrows'
-                    const arrowsDiv = document.getElementById('arrows');
-            
-                    // Check if the element exists
-                    if (arrowsDiv) {
-                        // Loop to append 20 SVGs
-                        for (let i = 0; i < 20; i++) {
-                            // Create a new div element for each SVG
-                            const svgElement = document.createElement('div');
-                            svgElement.innerHTML = svgContent;
-            
-                            // Append the SVG to the 'arrows' div
-                            arrowsDiv.appendChild(svgElement.firstElementChild);
-                        }
-                    } else {
-                        console.error('Element with ID "arrows" not found.');
-                    }
-                });
-            </script> 
+          <script src="./scripts/header.js"></script>
+          <script src="./scripts/reinvention.js"></script>
+          <script src="./scripts/connect.js"></script>  
 </body>
 
 </html>
