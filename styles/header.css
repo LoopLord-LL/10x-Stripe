@@ -138,6 +138,7 @@
         }
 
         &:last-child {
+        background-color: #FFFFFF;
           font-size: 13.83px;
           color: #E17537;
           border-radius: 16.5px;
@@ -188,13 +189,12 @@
       margin-left: 40px;
       margin-top: 100px;
 
-
-      /* ES SHESACVLELIA მანანა :DDD*/
       h1 {
         color: #3A3A3A;
         font-size: 83.35px;
         font-weight: 600;
         width: 570px;
+        padding-bottom: 25px;
       }
 
       p {
@@ -210,9 +210,11 @@
         height: 49px;
         display: flex;
         gap: 10px;
+        padding-top: 30px;
 
         button {
-          width: 111.64px;
+          width: 110px;
+          font-size: 14px;
           height: 33px;
           display: flex;
           align-items: center;
@@ -647,3 +649,5 @@
     }
   }
 }
+
+  
