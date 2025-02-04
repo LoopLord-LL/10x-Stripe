@@ -392,6 +392,7 @@
 
                             </div>
                         </div>
+                    </div>
                 </section>
                 <!-- payments -->
                 <section class="payments container">
@@ -524,6 +525,7 @@
             <section class="container">
                 <div class="enterprise-reinvention">
                     <div class="content">
+
                         <div class="top">
                             <h3>Enterprise reinvention</h3>
                             <h2>Bring agility to your enterprise</h2>
@@ -945,6 +947,36 @@
 
         </div>
         <footer class="container-wrapper">
+
+            </section>
+
+            <!-- launch with ease -->
+            <section class="launch-ease container">
+
+            </section>
+
+            <!-- get started -->
+            <section class="get-started container">
+                <div class="footer-container">
+
+                </div>
+            </section>
+
+            <!-- footer  -->
+
+        </div>
+        <footer class="container-wrapper">
+            <div class="decorative-lines">
+                <div class="left">
+                    <div class="long purple"></div>
+                    <div class="short cyan"></div>
+                </div>
+                <div class="center"></div>
+                <div class="right">
+                    <div class="long cyan"></div>
+                    <div class="short purple"></div>
+                </div>
+            </div>
             <div class="container">
 
                 <div class="footer-elements">
@@ -1041,13 +1073,23 @@
                 </div>
 
             </div>
-            <footer class="container-wrapper">
-                <div class="container">
+        </footer>
 
-                </div>
-            </footer>
+        <script>
+            const input = document.getElementById("expire-date-input");
 
+            input.addEventListener("input", (event) => {
+                let value = input.value;
 
+                value = value.replace(/[^0-9/]/g, "");
+                // Automatically insert slash after 2 digits
+                if (value.length === 2 && !value.includes("/")) {
+                    value += "/";
+                }
+                // Limit length to 5 characters (MM/YY)
+                input.value = value.slice(0, 5);
+            });
+        </script>
             <script src="./scripts/header.js"></script>
             <script src="./scripts/reinvention.js"></script>
 </body>
