@@ -23,9 +23,9 @@
 body{
     font-family: "Inter", serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .container-wrapper{
-    border: 1px solid red;
     padding: 20px;
 
 }
@@ -33,10 +33,9 @@ body{
     width: 100%;
     max-width: 1080px;
     padding: 50px 0;    
-    border: 1px solid green;
     margin: 0 auto;
 }
-S
+
 .main-content {
     padding: 0;
     background-color: #F6F9FC;
@@ -45,7 +44,7 @@ S
 footer.container-wrapper{
     padding: 0;
 }
-a{
+a {
     text-decoration: none;
 }
 
