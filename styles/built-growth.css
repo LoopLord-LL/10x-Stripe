@@ -41,6 +41,8 @@
         border: 4px solid white;
         border-radius: 4px;
         width: 500px;
+        overflow: hidden;
+        
         .atlas-back {
           background-image: url(../media/images/atlas.png);
           background-size: cover;
@@ -50,6 +52,7 @@
           margin-left: 60px;
           margin-top: 66px;
           border-radius: 8px;
+          transition: transform 0.3s ease;
         }
         .checkout-back {
           background-image: url(../media/images/checkout.png);
@@ -60,13 +63,17 @@
           margin-left: 60px;
           margin-top: 66px;
           border-radius: 8px;
+          transition: transform 0.3s ease;
         }
         .description {
           display: flex;
           flex-direction: column;
           gap: 12px;
-          padding: 32px 0px 32px 32px;
+          padding: 32px 0px 0px 32px;
           background-color: white;
+          transition: transform 0.3s ease;
+          height: 100%;
+       
           .atlas-title {
             font-size: 11.25px;
             font-weight: 500;
@@ -76,7 +83,7 @@
             justify-content: center;
             gap: 12px;
             width: 86px;
-            height: 40px;
+            /* height: 40px; */
             background-color: rgb(246 249 252);
             border-radius: 4px;
           }
@@ -89,7 +96,7 @@
             justify-content: center;
             gap: 12px;
             width: 110px;
-            height: 40px;
+            /* height: 40px; */
             background-color: rgb(246 249 252);
             border-radius: 4px;
           }
@@ -100,6 +107,60 @@
           }
           p {
             padding-right: 150px;
+               /* padding-bottom: 30px; */
+          }
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          gap: 5px;
+          color: #635BFF;
+          display: flex;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+          margin-top: 10px;
+
+          h5 {
+              font-size: 15px;
+              font-weight: 600;
+              transition: color 0.5s ease;
+
+          }
+
+          .arrow {
+              width: 10px;
+              height: 2px;
+              position: relative;
+              transition: 0.2s;
+
+              &::before {
+                  content: "";
+                  position: absolute;
+                  border: solid;
+                  border-width: 0px 2px 2px 0px;
+                  top: -3px;
+                  right: 3px;
+                  transition: 0.2s;
+                  padding: 3px;
+                  transform: rotate(-45deg);
+                  box-sizing: border-box;
+                  display: inline-block;
+              }
+          }
+
+          &:hover {
+              cursor: pointer;
+              color: #0A2540;
+
+              .arrow {
+                  background: #0A2540;
+              }
+
+              .arrow::before {
+                  right: 0px;
+                  color: #0A2540;
+              }
           }
         }
       }
@@ -115,6 +176,7 @@
         border: 4px solid white;
         border-radius: 4px;
         width: 500px;
+        overflow: hidden;
         .payment-back1 {
           background-image: url(../media/images/payment-back1.png);
           background-size: cover;
@@ -124,6 +186,7 @@
           margin-left: 0;
           margin-top: 0;
           border-radius: 8px;
+          transition: transform 0.3s ease;
         }
         .payment-back2 {
           background-image: url(../media/images/payment-back2.png);
@@ -133,7 +196,9 @@
           height: 234px;
           margin-left: 270px;
           margin-top: -130px;
+          margin-bottom: 20px;
           border-radius: 8px;
+          transition: transform 0.3s ease;
         }
         .invoicing-back {
           background-image: url(../media/images/invoicing.png);
@@ -143,14 +208,18 @@
           height: 260px;
           margin-left: 72px;
           margin-top: 50px;
+          margin-bottom: 20px;
           border-radius: 8px;
+          transition: transform 0.3s ease;
         }
         .description {
           display: flex;
           flex-direction: column;
           gap: 12px;
-          padding: 32px 0px 32px 32px;
+          padding: 32px 0px 0px 32px;
           background-color: white;
+          height: 100%;
+          transition: transform 0.3s ease;
           .payment-title {
             font-size: 11.25px;
             font-weight: 500;
@@ -187,6 +256,19 @@
           }
         }
       }
+    }
+  }
+  .card:hover {
+    .description {
+      transform: translateY(-45px);
+
+      button {
+        opacity: 1;
+        transform: translateY(-15px);
+      }
+    }
+    .payment-back1, .payment-back2, .invoicing-back, .checkout-back, .atlas-back {
+      transform: translateY(-13px);
     }
   }
 }
