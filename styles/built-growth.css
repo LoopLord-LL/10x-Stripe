@@ -3,26 +3,30 @@
   display: flex;
   flex-direction: column;
   gap: 64px;
-  p {
-    font-size: 16.59px;
-    font-weight: 500;
-    color: rgba(66, 84, 102, 1);
-    padding-right: 416px;
-  }
+
   .top-content {
+    padding-left: 16px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding-left: 16px;
+    gap: 20px;
+
     h2 {
-      font-size: 16.17px;
-      font-weight: 500;
+      font: 500 16.17px sans-serif;
       color: rgba(99, 91, 255, 1);
     }
+
     h3 {
-      font-size: 33.99px;
-      font-weight: 700;
+      font: 700 33.99px sans-serif;
       color: rgba(10, 37, 64, 1);
+    }
+
+    p {
+      font: 500 16.59px sans-serif;
+      color: rgba(66, 84, 102, 1);
+      padding-right: 416px;
+      max-width: 620px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
     }
   }
 
@@ -30,87 +34,116 @@
     width: 100%;
     display: flex;
     gap: 32px;
-    .left-side {
+
+    .left-side,
+    .right-side {
       width: 50%;
       display: flex;
       flex-direction: column;
       gap: 32px;
+    }
+
+    .left-side {
       padding-top: 130px;
       padding-left: 16px;
-      .card {
-        border: 4px solid white;
-        border-radius: 4px;
-        width: 500px;
-        overflow: hidden;
-        
-        .atlas-back {
-          background-image: url(../media/images/atlas.png);
-          background-size: cover;
-          background-position: center;
-          width: 434px;
-          height: 272px;
-          margin-left: 60px;
-          margin-top: 66px;
-          border-radius: 8px;
-          transition: transform 0.3s ease;
-        }
-        .checkout-back {
-          background-image: url(../media/images/checkout.png);
-          background-size: cover;
-          background-position: center;
-          width: 434px;
-          height: 272px;
-          margin-left: 60px;
-          margin-top: 66px;
-          border-radius: 8px;
-          transition: transform 0.3s ease;
-        }
-        .description {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          padding: 32px 0px 0px 32px;
-          background-color: white;
-          transition: transform 0.3s ease;
+    }
+
+    .right-side {
+      padding-right: 16px;
+    }
+
+    .card {
+      border: 4px solid white;
+      border-radius: 4px;
+      width: 500px;
+      overflow: hidden;
+      position: relative;
+
+      .gradient-bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        visibility: hidden;
+        transition: 0.3s ease;
+
+        .gradient-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
           height: 100%;
-       
-          .atlas-title {
-            font-size: 11.25px;
-            font-weight: 500;
-            color: rgba(46, 58, 85, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 86px;
-            /* height: 40px; */
-            background-color: rgb(246 249 252);
-            border-radius: 4px;
-          }
-          .checkout-title {
-            font-size: 11.25px;
-            font-weight: 500;
-            color: rgba(46, 58, 85, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 110px;
-            /* height: 40px; */
-            background-color: rgb(246 249 252);
-            border-radius: 4px;
-          }
-          h2 {
-            font-size: 24.07px;
-            font-weight: 500;
-            color: rgba(10, 37, 64, 1);
-          }
-          p {
-            padding-right: 150px;
-               /* padding-bottom: 30px; */
-          }
+          z-index: -1;
         }
+
+        .color {
+          position: absolute;
+          width: 50%;
+          height: 50%;
+          transition: all 0.3s ease;
+        }
+
+        .c1 {
+          background: radial-gradient(circle at 30% 30%, rgba(255, 145, 145, 0.5), rgba(100, 255, 255, 0.3));
+          top: 0;
+          left: 0;
+        }
+
+        .c2 {
+          background: linear-gradient (45deg, rgba(255, 200, 150, 0.6), rgba(140, 100, 255, 0.4));
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      .description {
+        padding: 32px 0 0 32px;
+        background-color: white;
+        height: 100%;
+        transition: transform 0.3s ease;
+
+        h2 {
+          padding-top: 8px;
+          font: 600 24.07px sans-serif;
+          color: rgba(10, 37, 64, 1);
+        }
+
+        p {
+          padding: 12px 100px 20px 0;
+          max-width: 500px;
+          color: #425466;
+        }
+
+        .title {
+          font: 500 11.25px sans-serif;
+          color: rgba(46, 58, 85, 1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          background-color: rgb(246 249 252);
+          height: 40px;
+          border-radius: 4px;
+        }
+
+        .atlas-icon {
+          width: 86px;
+        }
+
+        .checkout-icon {
+          width: 110px;
+        }
+
+        .payment-icon {
+          width: 136px;
+        }
+
+        .invoicing-icon {
+          width: 110px;
+        }
+
         button {
+          position: absolute;
+          top: 195px;
           background-color: transparent;
           border: none;
           gap: 5px;
@@ -118,147 +151,109 @@
           display: flex;
           align-items: center;
           opacity: 0;
-          transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-          margin-top: 10px;
+          transition: opacity 0.4s ease, transform 0.3s ease, visibility 0.3s;
 
           h5 {
-              font-size: 15px;
-              font-weight: 600;
-              transition: color 0.5s ease;
-
+            font: 600 15px sans-serif;
+            transition: color 0.5s ease;
           }
 
           .arrow {
-              width: 10px;
-              height: 2px;
-              position: relative;
-              transition: 0.2s;
+            width: 10px;
+            height: 2px;
+            position: relative;
+            transition: 0.2s;
 
-              &::before {
-                  content: "";
-                  position: absolute;
-                  border: solid;
-                  border-width: 0px 2px 2px 0px;
-                  top: -3px;
-                  right: 3px;
-                  transition: 0.2s;
-                  padding: 3px;
-                  transform: rotate(-45deg);
-                  box-sizing: border-box;
-                  display: inline-block;
-              }
+            &::before {
+              content: "";
+              position: absolute;
+              border: solid;
+              border-width: 0px 2px 2px 0px;
+              top: -3px;
+              right: 3px;
+              transition: 0.2s;
+              padding: 3px;
+              transform: rotate(-45deg);
+              box-sizing: border-box;
+              display: inline-block;
+            }
           }
 
           &:hover {
-              cursor: pointer;
+            cursor: pointer;
+            color: #0A2540;
+
+            .arrow {
+              background: #0A2540;
+            }
+
+            .arrow::before {
+              right: 0;
               color: #0A2540;
-
-              .arrow {
-                  background: #0A2540;
-              }
-
-              .arrow::before {
-                  right: 0px;
-                  color: #0A2540;
-              }
+            }
           }
         }
       }
-    }
 
-    .right-side {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      padding-right: 16px;
-      .card {
-        border: 4px solid white;
-        border-radius: 4px;
-        width: 500px;
-        overflow: hidden;
-        .payment-back1 {
-          background-image: url(../media/images/payment-back1.png);
-          background-size: cover;
-          background-position: center;
-          width: 234px;
-          height: 234px;
-          margin-left: 0;
-          margin-top: 0;
-          border-radius: 8px;
-          transition: transform 0.3s ease;
-        }
-        .payment-back2 {
-          background-image: url(../media/images/payment-back2.png);
-          background-size: cover;
-          background-position: center;
-          width: 234px;
-          height: 234px;
-          margin-left: 270px;
-          margin-top: -130px;
-          margin-bottom: 20px;
-          border-radius: 8px;
-          transition: transform 0.3s ease;
-        }
-        .invoicing-back {
-          background-image: url(../media/images/invoicing.png);
-          background-size: cover;
-          background-position: center;
-          width: 356px;
-          height: 260px;
-          margin-left: 72px;
-          margin-top: 50px;
-          margin-bottom: 20px;
-          border-radius: 8px;
-          transition: transform 0.3s ease;
-        }
-        .description {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          padding: 32px 0px 0px 32px;
-          background-color: white;
-          height: 100%;
-          transition: transform 0.3s ease;
-          .payment-title {
-            font-size: 11.25px;
-            font-weight: 500;
-            color: rgba(46, 58, 85, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 136px;
-            height: 40px;
-            background-color: rgb(246 249 252);
-            border-radius: 4px;
-          }
-          .invoicing-title {
-            font-size: 11.25px;
-            font-weight: 500;
-            color: rgba(46, 58, 85, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            width: 110px;
-            height: 40px;
-            background-color: rgb(246 249 252);
-            border-radius: 4px;
-          }
-          h2 {
-            font-size: 24.07px;
-            font-weight: 500;
-            color: rgba(10, 37, 64, 1);
-          }
-          p {
-            padding-right: 150px;
-          }
-        }
+      .bg {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .atlas-img {
+        background-image: url(../media/images/atlas.png);
+        width: 434px;
+        height: 272px;
+        margin: 66px 0 0 60px;
+      }
+
+      .checkout-img {
+        background-image: url(../media/images/checkout.png);
+        width: 434px;
+        height: 272px;
+        margin: 66px 0 0 60px;
+      }
+
+      .payment-img1 {
+        background-image: url(../media/images/payment-back1.png);
+        width: 234px;
+        height: 234px;
+        margin: 0;
+      }
+
+      .payment-img2 {
+        background-image: url(../media/images/payment-back2.png);
+        width: 234px;
+        height: 234px;
+        margin: -130px 0 20px 270px;
+      }
+
+      .invoicing-img {
+        background-image: url(../media/images/invoicing.png);
+        width: 356px;
+        height: 260px;
+        margin: 50px 0 20px 72px;
+      }
+
+      .atlas,
+      .payment {
+        top: 195px;
+      }
+
+      .checkout,
+      .invoicing {
+        top: 215px;
       }
     }
   }
+
   .card:hover {
+    .gradient-bg {
+      visibility: visible;
+    }
+
     .description {
       transform: translateY(-45px);
 
@@ -267,7 +262,8 @@
         transform: translateY(-15px);
       }
     }
-    .payment-back1, .payment-back2, .invoicing-back, .checkout-back, .atlas-back {
+
+    .bg {
       transform: translateY(-13px);
     }
   }
