@@ -56,8 +56,9 @@ footer {
         position: relative;
         display: flex;
         justify-content: stretch;
-        transform: rotate(-5deg);
-        margin-bottom: 100px;
+        transform: rotate(-7deg);
+        top: -173px;
+       
 
         .left {
             position: relative;
@@ -73,7 +74,7 @@ footer {
 
             .short {
                 position: absolute;
-                top: -30px;
+                top: -25px;
                 right: 50px;
                 background-color: #80E9FF;
                 height: 40px;
@@ -101,7 +102,7 @@ footer {
 
             .short {
                 position: absolute;
-                top: 30px;
+                top: 25px;
                 left: 50px;
                 background-color: #7A73FF;
                 height: 40px;
