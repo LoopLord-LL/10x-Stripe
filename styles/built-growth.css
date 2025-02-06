@@ -58,43 +58,8 @@
       width: 500px;
       overflow: hidden;
       position: relative;
-
-      .gradient-bg {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        visibility: hidden;
-        transition: 0.3s ease;
-
-        .gradient-bg {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-        }
-
-        .color {
-          position: absolute;
-          width: 50%;
-          height: 50%;
-          transition: all 0.3s ease;
-        }
-
-        .c1 {
-          background: radial-gradient(circle at 30% 30%, rgba(255, 145, 145, 0.5), rgba(100, 255, 255, 0.3));
-          top: 0;
-          left: 0;
-        }
-
-        .c2 {
-          background: linear-gradient (45deg, rgba(255, 200, 150, 0.6), rgba(140, 100, 255, 0.4));
-          bottom: 0;
-          right: 0;
-        }
-      }
-
+      box-shadow: 0px 30px 45px -30px #32325D40, 0px 18px 36px -18px #0000001A;
+     
       .description {
         padding: 32px 0 0 32px;
         background-color: white;
@@ -250,10 +215,37 @@
   }
 
   .card:hover {
-    .gradient-bg {
-      visibility: visible;
+    background-color: rgb(246 249 252);
+    background-position: 50% 50%;
+    background-size: 150% 150%;
+    animation: moveGradient 40s ease infinite;
+    &.yellow {
+      background-image:
+      radial-gradient(at 67% 26%, #ffc250 0px, transparent 30%),
+      radial-gradient(at 39% 64%, #fae187 0px, transparent 30%);
     }
 
+    &.cyan {
+      background-image:
+      radial-gradient(at 67% 26%, #8bfff9 0px, transparent 30%),
+      radial-gradient(at 39% 64%, #b793ff 0px, transparent 30%);
+    }
+
+    &.purple {
+      background-image:
+      radial-gradient(at 67% 26%, #81f1ec 0px, transparent 30%),
+      radial-gradient(at 39% 64%, #af8ff0 0px, transparent 30%);
+    }
+
+    
+    &.green {
+      background-image:
+      radial-gradient(at 67% 26%, #ffe68a 0px, transparent 30%),
+      radial-gradient(at 39% 64%, #4ba04b 0px, transparent 30%);
+    }
+    
+    
+    
     .description {
       transform: translateY(-45px);
 
@@ -266,5 +258,23 @@
     .bg {
       transform: translateY(-13px);
     }
+  }
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 50% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  75% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
