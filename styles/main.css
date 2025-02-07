@@ -23,12 +23,16 @@
 body{
     font-family: "Inter", serif;
     box-sizing: border-box;
+}
+
+#app {
     overflow-x: hidden;
 }
-.container-wrapper{
+
+/* .container-wrapper{
     padding: 20px;
 
-}
+} */
 .container{
     width: 100%;
     max-width: 1080px;
