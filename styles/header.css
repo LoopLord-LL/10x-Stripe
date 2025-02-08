@@ -4,8 +4,8 @@
   height: 580.47px;
   position: absolute;
   z-index: -1;
-
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 76%);
+  /* transform: rotate(-12deg); */
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 90%);
 }
 
 .meshgradient>.color {
@@ -25,57 +25,75 @@
 }
 
 .c1 {
-  background: radial-gradient(#605edb 25%, transparent 50%);
+  background: radial-gradient(#605edb 25%, transparent 30%);
   background-size: 80% 80%;
   background-position: 0 0;
-  animation: c1 8s infinite linear;
 }
 
 .c2 {
-  background: radial-gradient(#FFB055 25%, transparent 50%);
+  background: radial-gradient(#FFB055  25%, transparent 30%);
   background-size: 80% 80%;
   background-position: 0 100%;
-  animation: c2 10s infinite linear;
+  animation: c2 30s infinite linear;
 }
 
 .c3 {
-  background: radial-gradient(#B25EDB 25%, transparent 50%);
-  animation: c3 5s infinite linear;
-  background-size: 80% 80%;
+  background: radial-gradient(#B25EDB 25%, transparent 30%);
+  background-size: 100% 100%;
   background-position: 0 100%;
-  transform: scale(3) rotate(8deg);
+   animation: c5 30s infinite linear;
 }
 
 .c4 {
-  background: radial-gradient(#FF2840 25%, transparent 50%);
+  background: radial-gradient(#FF2840 25%, transparent 30%);
   background-size: 80% 80%;
   background-position: 50% 100%;
-  animation: c4 6s infinite linear;
+  animation: c4 30s infinite linear;
 }
 
-
-@keyframes c1 {
-  50% {
-    background-size: 50% 50%;
-    background-position: 50% 100%;
-    transform: scale(3) rotate(-75deg);
-  }
+.c5 {
+  background: radial-gradient(#04fafa 25%, transparent 30%);
+  background-size: 80% 80%;
+  background-position: 50% 70%;
+  animation: c4 30s infinite linear;
 }
+
+.c6 {
+  background: radial-gradient(#4319ff 25%, transparent 30%);
+  background-size: 80% 80%;
+  background-position: 100% 100%;
+  animation: c6 30s infinite linear;
+}
+
 
 @keyframes c2 {
   50% {
     background-size: 80% 80%;
-    background-position: 50% 0;
-    transform: scale(3) rotate(90deg);
+    background-position: 0 0;
+    transform: scale(3);
   }
 }
 
 
 @keyframes c4 {
   50% {
+    background-position: 30% 100%;
+    transform: scale(3);
+  }  
+
+}
+
+@keyframes c5 {
+  50% {
+    background-position: 100% 0;
+    transform: scale(3);
+  }
+}
+
+@keyframes c6 {
+  50% {
     background-position: 0 0;
-    animation: c1 10s infinite;
-    transform: scale(3) rotate(-36deg);
+    transform: scale(3);
   }
 }
 
@@ -176,6 +194,7 @@
     li:hover {
       opacity: 0.6;
       cursor: pointer;
+      transition: opacity 0.2s ease;
     }
   }
 
@@ -193,6 +212,7 @@
         font-weight: 600;
         width: 570px;
         padding-bottom: 25px;
+        mix-blend-mode: luminosity;
       }
 
       p {
@@ -494,7 +514,6 @@
             font-size: 10.14px;
             font-weight: 500;
             color: #62788D;
-            padding-left: 22px;
           }
         }
       }
