@@ -4,19 +4,30 @@ const svgContent = `
 </svg>
 `;
 
-// Target the div with ID 'arrows'
-const arrowsDiv = document.getElementById('arrows');
+// Target the div with ID 'topArrows'
+const topArrowsDiv = document.getElementById('topArrows');
 
 // Check if the element exists
-if (arrowsDiv) {
-    for (let i = 0; i < 20; i++) {
-        // Create a new div element for each SVG
+if (topArrowsDiv) {
+    for (let i = 0; i < 11; i++) {
         const svgElement = document.createElement('div');
         svgElement.innerHTML = svgContent;
-
-        // Append the SVG to the 'arrows' div
-        arrowsDiv.appendChild(svgElement.firstElementChild);
+        topArrowsDiv.appendChild(svgElement.firstElementChild);
     }
 } else {
-    console.error('Element with ID "arrows" not found.');
+    console.error('Element with ID "topArrows" not found.');
+}
+
+// Target the div with ID 'bottomArrows'
+const bottomArrowsDiv = document.getElementById('bottomArrows');
+
+// Check if the element exists
+if (bottomArrowsDiv) {
+    for (let i = 0; i < 11; i++) {
+        const svgElement = document.createElement('div');
+        svgElement.innerHTML = svgContent;
+        bottomArrowsDiv.appendChild(svgElement.firstElementChild);
+    }
+} else {
+    console.error('Element with ID "bottomArrows" not found.');
 }
