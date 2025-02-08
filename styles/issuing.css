@@ -40,7 +40,7 @@
             font-weight: 500;
             line-height: 28px;
             color:  #425466;
-            width: 460px;
+            max-width: 460px;
 
         }
         button {
@@ -125,6 +125,105 @@
                         top: 300px;
                         z-index: 5;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .issuing{
+        .left{
+            max-width: 540px;
+        }
+        .right{
+            .modular-cards{
+                max-width: 383px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .issuing{
+        .left{
+            max-width: 496px;
+        }
+        .right{
+            .modular-cards{
+                max-width: 383px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .issuing {
+        display: flex;
+        flex-direction: column;
+        height: 1044px;
+        gap: 32px;        
+        .left {
+            width: 100%;
+            max-width: 736px;
+        }
+  
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .modular-cards {
+                width: 100%;
+                max-width: 383px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                .cards {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .issuing {
+        display: flex;
+        flex-direction: column;
+        height: 1044px;
+        gap: 32px;
+        .left {
+            width: 100%;
+            max-width: 350px;
+        }
+  
+        .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .modular-cards {
+                width: 100%;
+                max-width: 328px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                .cards {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
         }
