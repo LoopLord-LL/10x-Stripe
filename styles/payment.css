@@ -3,6 +3,7 @@
   align-items: center;
   background-color: #F6F9FC;
   gap: 32px;
+
   .left {
     width: 50%;
     padding-left: 16px;
@@ -50,6 +51,7 @@
     .arrow::before {
       border-color: #FFFFFF;
     }
+
     .arrow {
       width: 10px;
       height: 2px;
@@ -72,16 +74,17 @@
         display: inline-block;
       }
     }
-  
+
     &:hover {
       background-color: #0A2540;
       transition: 0.1s ease;
-      
+
       .arrow::before {
         right: 0px;
       }
+
       .arrow {
-        background: #FFFFFF;  
+        background: #FFFFFF;
       }
     }
   }
@@ -118,6 +121,152 @@
 
 .payment-aside {
   margin-left: 100px;
+  position: relative;
+
+  .icons-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &.left-side {
+      left: -110px;
+      top: 140px;
+      height: 50%;
+    }
+
+    &.right-side {
+      height: 70%;
+      right: -115px;
+      top: 170px;
+    }
+  }
+
+  .icon-animated {
+    width: 42.55px;
+    height: 42.55px;
+    border-radius: 4px;
+    border: 1px solid #C4CCD8;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    animation: box 8s ease-in-out infinite;
+
+    &.left-bottom {
+      animation-delay: 6s;
+    }
+
+    &.right-top {
+      animation-delay: 4s; 
+    }
+
+    &.right-bottom {
+      animation-delay: 2s; 
+    }
+
+    .animated-icon-wrapper-left {
+
+      .color-shift {
+        mix-blend-mode: multiply;
+        animation: changeColor 8s ease-in-out infinite;
+      }
+
+      .cyan1, .cyan2 {
+        --fill-color: url(#gradient1); 
+      }
+  
+      .purple1, .purple2 {
+        --fill-color: #9966FF; 
+      }
+
+      .cyan2, .purple2 {
+        animation-delay: 6s;
+      }
+    }  
+
+    .animated-icon-wrapper-right {
+  
+      .color-shift {
+        mix-blend-mode: multiply;
+        animation: changeColor 8s ease-in-out infinite;
+      }
+
+      .pink1, .pink2 {
+        --fill-color: url(#gradient2); 
+      }
+  
+      .purple1, .purple2 {
+        --fill-color: #9966FF; 
+      }
+
+      .pink1, .purple1 {
+        animation-delay: 4s;
+      }
+
+      .pink2, .purple2 {
+        animation-delay: 2s;
+      }
+    }
+  }
+
+  .svg-container-left {
+    position: absolute;
+    /* transform: translateY(-50%); */
+    z-index: 1;
+    left: 20px;
+
+    &.top {
+      top: 33%;
+    }
+
+    &.bottom {
+      top: 51%;
+    }
+
+    .animated-path {
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      animation: drawLine 8s ease-in-out infinite;
+    }
+
+    .bottom-path {
+      animation-delay: 6s;
+    }
+  }
+
+  .svg-container-right {
+    position: absolute;
+    z-index: 1;
+    left: -67px;
+
+    &.top {
+      top: 30.5%;
+    }
+
+    &.bottom {
+      top: 58%;
+    }
+
+    .animated-path {
+      stroke-dasharray: 150;
+      stroke-dashoffset: 150;
+      animation: drawLine 8s ease-in-out infinite;
+    }
+  
+    .top-path {
+      animation-delay: 4s ;
+    }
+  
+    .bottom-path {
+      animation-delay: 2s;
+    }
+  }
+
+  
+
   .online-shop {
     width: 299px;
     height: 613px;
@@ -148,7 +297,7 @@
       }
     }
 
-    > button:nth-child(3) {
+    >button:nth-child(3) {
       width: 249px;
       height: 32px;
       border-radius: 8px;
@@ -159,7 +308,7 @@
       margin-top: 10px;
     }
 
-    > button:nth-child(4) {
+    >button:nth-child(4) {
       width: 248px;
       height: 32px;
       background-color: #33DDB3;
@@ -172,13 +321,14 @@
       font-size: 13px;
       margin-top: 10px;
 
-      > img:first-child {
+      >img:first-child {
         width: 26.03px;
         height: 11.8px;
         padding: 3px;
         border-right: 1px solid #1AC59B;
         margin-right: 4px;
       }
+
       h4 {
         font-weight: 500;
         color: #1D3944;
@@ -210,10 +360,11 @@
         padding-left: 7px;
       }
     }
-    > button:last-child {
+
+    >button:last-child {
       font-size: 10.66px;
       width: 248px;
-      height: 32px;    
+      height: 32px;
       border-radius: 8px;
       background-color: #0A2540;
       border: none;
@@ -252,13 +403,14 @@
     .card_info_wrapper {
       position: relative;
 
-      > img:first-child {
+      >img:first-child {
         position: absolute;
         z-index: 10;
         top: 37px;
         left: 218px;
       }
-      > img:nth-child(2) {
+
+      >img:nth-child(2) {
         position: absolute;
         z-index: 1;
         top: 33px;
@@ -329,14 +481,84 @@
   }
 }
 
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 150;
+  }
+
+  15% {
+    stroke-dashoffset: 0;
+  }
+
+  25% {
+    stroke-dashoffset: 150;
+  }
+
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+  
+@keyframes box {
+  0% {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #C4CCD8;
+  }
+
+  15% {
+    background-color: #FFFFFF;
+    box-shadow: 0px 7.56px 15.12px -7.56px #0000001A, 0px 12.6px 25.2px -11.57px #32325D40;
+    transform: scale(1.2);
+    border-color: transparent;
+  }
+
+  25% {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #C4CCD8;
+  }
+
+  100% {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #C4CCD8;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    fill: none;
+    stroke: #C4CCD8;
+  }
+
+  15% {
+    fill: var(--fill-color);
+    stroke: transparent;
+  }
+
+  25% {
+    fill: none;
+    stroke: #C4CCD8;
+  }
+
+  100% {
+    fill: none;
+    stroke: #C4CCD8;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .payments {
-    .left{
-      h2, p{
+    .left {
+
+      h2,
+      p {
         max-width: 810px;
       }
     }
-    aside{
+
+    aside {
       padding-right: 140px;
     }
   }
@@ -349,15 +571,19 @@
     gap: 32px;
     flex-direction: column;
     position: relative;
-    .left{
+
+    .left {
       width: 100%;
-      h2, p{
+
+      h2,
+      p {
         max-width: 656px;
       }
     }
-    aside{
-      margin-left: 0!important;
-      padding: 0!important;
+
+    aside {
+      margin-left: 0 !important;
+      padding: 0 !important;
       position: absolute;
       left: 50%;
       transform: translate(-50%);
@@ -373,20 +599,24 @@
     gap: 32px;
     flex-direction: column;
     position: relative;
-    .left{
+
+    .left {
       width: 100%;
-      h2, p{
+
+      h2,
+      p {
         max-width: 315px;
       }
     }
-    aside{
-      margin-left: 0!important;
-      padding: 0!important;
+
+    aside {
+      margin-left: 0 !important;
+      padding: 0 !important;
       position: absolute;
       left: 50%;
       transform: translate(-50%);
       top: 606px;
     }
   }
-  
+
 }
