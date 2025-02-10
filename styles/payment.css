@@ -175,7 +175,7 @@
       }
 
       .cyan1, .cyan2 {
-        --fill-color: url(#gradient1); 
+        --fill-color: #11EFE3; 
       }
   
       .purple1, .purple2 {
@@ -194,19 +194,19 @@
         animation: changeColor 8s ease-in-out infinite;
       }
 
-      .pink1, .pink2 {
-        --fill-color: url(#gradient2); 
+      .yellow1, .yellow2 {
+        --fill-color: #FAD137; 
       }
   
-      .purple1, .purple2 {
-        --fill-color: #9966FF; 
+      .green1, .green2 {
+        --fill-color: #00D924; 
       }
 
-      .pink1, .purple1 {
+      .yellow1, .green1 {
         animation-delay: 4s;
       }
 
-      .pink2, .purple2 {
+      .yellow2, .green2 {
         animation-delay: 2s;
       }
     }
@@ -528,8 +528,8 @@
 
 @keyframes changeColor {
   0% {
-    fill: none;
-    stroke: #C4CCD8;
+    fill: transparent;
+    stroke: none;
   }
 
   15% {
@@ -538,12 +538,12 @@
   }
 
   25% {
-    fill: none;
+    fill: transparent;
     stroke: #C4CCD8;
   }
 
   100% {
-    fill: none;
+    fill: transparent;
     stroke: #C4CCD8;
   }
 }
