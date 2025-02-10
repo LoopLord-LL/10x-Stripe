@@ -1,6 +1,3 @@
-/* For modular payment styles */
-/* every class names must begin with "payment - ..." */
-
 .payments {
   display: flex;
   align-items: center;

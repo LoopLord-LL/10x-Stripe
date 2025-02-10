@@ -1,6 +1,3 @@
-/* For modular solutions styles */
-/* every class names must begin with "modular - ..." */
-
 .modular-solutions {
     display: flex;
     .left {
@@ -15,7 +12,7 @@
         width: 50%;
     }
     .cards{
-        margin-top: 136px;
+        margin-top: 20px;
         position: relative;
     }
     .modular-cards img{
@@ -25,13 +22,11 @@
     .modular-cards .mod-card1{
         cursor: pointer;
         top: 0;
-        /* margin-top: 136px; */
         z-index: 1;
     }
     .modular-cards .mod-card2{
         cursor: pointer;
         top: 93px;
-        /* margin-top: 93px; */
         z-index: 2;
 
     }

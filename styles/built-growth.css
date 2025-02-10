@@ -168,35 +168,35 @@
       }
 
       .atlas-img {
-        background-image: url(../media/images/atlas.png);
+        background-image: url(../assets/images/atlas.png);
         width: 434px;
         height: 272px;
         margin: 66px 0 0 60px;
       }
 
       .checkout-img {
-        background-image: url(../media/images/checkout.png);
+        background-image: url(../assets/images/checkout.png);
         width: 434px;
         height: 272px;
         margin: 66px 0 0 60px;
       }
 
       .payment-img1 {
-        background-image: url(../media/images/payment-back1.png);
+        background-image: url(../assets/images/payment-back1.png);
         width: 234px;
         height: 234px;
         margin: 0;
       }
 
       .payment-img2 {
-        background-image: url(../media/images/payment-back2.png);
+        background-image: url(../assets/images/payment-back2.png);
         width: 234px;
         height: 234px;
         margin: -130px 0 20px 270px;
       }
 
       .invoicing-img {
-        background-image: url(../media/images/invoicing.png);
+        background-image: url(../assets/images/invoicing.png);
         width: 356px;
         height: 260px;
         margin: 50px 0 20px 72px;

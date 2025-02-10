@@ -1,6 +1,6 @@
 .global-scale{
     background-color: #0A2540;
-    background-image: url(../media/images/earth.png);
+    background-image: url(../assets/images/earth.png);
     background-repeat: no-repeat;
     clip-path: polygon(0 28%, 100% 0%, 100% 100%, 0% 100%);
     background-position: center;
