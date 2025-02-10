@@ -81,7 +81,7 @@
         button {
             --primary-color: #635BFF;
             --secondary-color: #fff;
-            --hover-color: #111;
+            --hover-color: #0A2540;
             --arrow-width: 10px;
             --arrow-stroke: 2px;
             box-sizing: border-box;
@@ -188,7 +188,7 @@
         padding-right: 16px;
 
         .aside-container {
-            background-image: url('../media/images/connect-aside-bg.jpg');
+            background-image: url('../assets/images/connect-aside-bg.jpg');
             background-size: cover;
             border: 1.19px solid #C4CCD8;
             width: 331px;
@@ -264,7 +264,7 @@
                         }
 
                         &.completed {
-                            top: 40px;
+                            top: 39px;
                             position: absolute;
                             background-color: #D0CDFF;
                             opacity: 0;
@@ -564,7 +564,6 @@
                     border-radius: 100% 100% 2px 100%;
                     border: 1.83px solid #C4CCD8;
                     mix-blend-mode: multiply;
-                    transition: background 0.3s ease;
                 }
 
                 >div:last-child {
@@ -576,7 +575,6 @@
                     position: absolute;
                     border: 1.83px solid #C4CCD8;
                     mix-blend-mode: multiply;
-                    transition: background;
                 }
 
                 &:hover {
