@@ -95,6 +95,22 @@
                 width: 100%;
                 max-width: 656px;
             }
+            h2{
+                font-size: 44px;
+                font-weight: 700;
+                line-height: 68px;
+                text-align: left;
+                max-width: 460px;
+                color: #0A2540;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: left;
+                max-width: 460px;
+                color: #425466;
+            }
         }
         .right {
             width: 100%;
@@ -103,6 +119,7 @@
             .cards {
                 display: flex;
                 justify-content: center;
+                top: 120px;
             }
             .zebra, .link {
                 display: none;
@@ -110,7 +127,6 @@
         }
     }
 }
-
 @media screen and (max-width: 470px) {
     .modular-solutions {
         flex-direction: column;
@@ -120,13 +136,26 @@
             h2 {
                 display: flex;
                 width: 100%;
-                max-width: 315px;
+                max-width: 320px;
+                font-size: 44px;
+                font-weight: 700;
+                line-height: 68px;
+                text-align: left;
+                max-width: 460px;
+                color: #0A2540;
             }
             p {
                 display: flex;
                 width: 100%;
                 max-width: 348px;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 28px;
+                text-align: left;
+                max-width: 460px;
+                color: #425466;
             }
+
         }
         .right {
             width: 100%;
@@ -135,6 +164,15 @@
             .cards {
                 display: flex;
                 justify-content: center;
+                top: 120px;
+            }
+            .modular-cards .cards:hover {
+                /* Disable hover effect */
+                top: initial;
+                z-index: initial;
+            }
+            .modular-cards .cards {
+                pointer-events: none;
             }
             .zebra, .link {
                 display: none;
