@@ -24,6 +24,7 @@
           line-height: 28px;
           color: #425466;
           padding-bottom: 24px;
+          max-width: 720px;
           a {
             text-decoration: none;
             color: #635bff;
@@ -83,6 +84,7 @@
                 font-weight: 500;
                 line-height: 24px;
                 color: #425466;
+                /* max-width: 216px; */
               }
               .products {
                 font-size: 13.95px;
@@ -232,3 +234,133 @@
     }
   }
   
+  @media screen and (max-width: 1024px) {
+    .enterprise-reinvention {
+      .content {
+        .top {
+          h2 {
+            font-size: 31x;
+            line-height: 40px;
+          }
+          p {
+            max-width: 690px;
+          }
+        }
+        .bottom {
+          .top-side {
+            .text-wrapper {
+             max-width: 248px;
+            }
+          }
+        }
+      }
+    }
+  } 
+
+  @media screen and (max-width: 768px) {
+    .enterprise-reinvention {
+      .content {
+        display: flex;
+        flex-direction: column;
+        .top {
+          h2 {
+            font-size: 31px;
+            line-height: 40px;
+          }
+          p {
+            max-width: 690px;
+          }
+        }
+        .bottom {
+          .top-side {
+            display: flex;
+            flex-direction: column;
+            .image{
+              height: 410px;
+              max-width: 736px;
+              width: 100%;
+              div{
+                max-width: 405px;
+                font-size: 24px;
+              }
+            }
+            .text-wrapper {
+              .text{
+                max-width: 736px;
+                width: 100%;
+                }
+                p{
+                  max-width: 736px;
+                  width: 100%;
+
+                }
+              .text:nth-child(2) {
+                display: none;
+              }
+              .text:nth-child(3) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+
+  @media screen and (max-width: 450px) {
+
+    .enterprise-reinvention {
+      .content {
+        display: flex;
+        flex-direction: column;
+        .top {
+          h2 {
+            font-size: 31px;
+            line-height: 40px;
+          }
+          p {
+            max-width: 690px;
+          }
+        }
+
+        .bottom {
+          .bottom-side{
+            display: none;
+          }
+          .top-side {
+            display: flex;
+            flex-direction: column;
+            .image{
+              height: 410px;
+              max-width: 370px;
+              width: 100%;
+              div{
+                max-width: 405px;
+                font-size: 24px;
+              }
+            }
+            .text-wrapper {
+              .text{
+                max-width: 736px;
+                width: 100%;
+                }
+                p{
+                  max-width: 736px;
+                  width: 100%;
+
+                }
+              .text:nth-child(2) {
+                display: none;
+              }
+              .text:nth-child(3) {
+                display: none;
+              }
+            }
+          }
+          svg{
+            display: none !important;
+          }
+        }
+      }
+    }
+  } 
