@@ -879,6 +879,7 @@
                 }
             }
             h1{
+                max-width: 415px;
                 font-size: 32px;
             }
             h2{
@@ -895,11 +896,223 @@
                 .hanako-yamada-wrapper, .jacques-muller-wrapper {
                     left: -26px;
                 }
+                > div:nth-child(3) {
+                    >button:nth-child(5) {
+                        left: 50%;
+                        transform: translate(-50%);
+                          
+                    }
+                    .dashed-border:nth-child(6){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:first-child{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    .money{
+                        left: 35% ;
+                        transform: translate(-50%);
+                    }
+                    .platform{
+                        left: 24%;
+                    }
+                    >.dashed-border:nth-child(2){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:nth-child(10){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >.dashed-border:nth-child(11){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    #bottomArrows, #topArrows{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+
+                 } 
 
             }
         }
         .icon-wrapper{
             display: none;
         }
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .connect{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        article {
+            >div:first-child {
+                h3{
+                    font-size: 17px;
+                    
+                }
+            }
+            h1{
+                font-size: 32px;
+                max-width: 992px;
+                width: 100%;
+            }
+            h2{
+                font-size: 16px;
+                max-width: 992px; 
+                width: 100%; 
+            }
+            span{
+                font-size: 13px;
+            }
+        }
+        aside{
+            display: flex;
+            justify-content: center;
+            .aside-container{
+                max-width: 278px;
+                margin: 0 auto;
+                
+                .hanako-yamada-wrapper, .jacques-muller-wrapper {
+                    left: -26px;
+                }
+                > div:nth-child(3) {
+                    >button:nth-child(5) {
+                        left: 50%;
+                        transform: translate(-50%);
+                          
+                    }
+                    .dashed-border:nth-child(6){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:first-child{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    .money{
+                        left: 35% ;
+                        transform: translate(-50%);
+                    }
+                    .platform{
+                        left: 24%;
+                    }
+                    >.dashed-border:nth-child(2){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:nth-child(10){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >.dashed-border:nth-child(11){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    #bottomArrows, #topArrows{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+
+                 } 
+
+            }
+        }
+        .icon-wrapper{
+            display: none;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 440px){
+    .connect{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        article {
+            >div:first-child {
+                h3{
+                    font-size: 17px;
+                    
+                }
+            }
+            h1{
+                font-size: 32px;
+                max-width: 992px;
+                width: 100%;
+            }
+            h2{
+                font-size: 16px;
+                max-width: 992px; 
+                width: 100%; 
+            }
+            span{
+                font-size: 13px;
+            }
+        }
+        aside{
+            display: flex;
+            justify-content: center;
+            .aside-container{
+                max-width: 270px;
+                left: 135px;
+                transform: translate(-50%);
+
+                
+                .hanako-yamada-wrapper, .jacques-muller-wrapper {
+                    left: -26px;
+                }
+                > div:nth-child(3) {
+                    >button:nth-child(5) {
+                        left: 50%;
+                        transform: translate(-50%);
+                          
+                    }
+                    .dashed-border:nth-child(6){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:first-child{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    .money{
+                        left: 35% ;
+                        transform: translate(-50%);
+                    }
+                    .platform{
+                        left: 24%;
+                    }
+                    >.dashed-border:nth-child(2){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >button:nth-child(10){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    >.dashed-border:nth-child(11){
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+                    #bottomArrows, #topArrows{
+                        left: 50%;
+                        transform: translate(-50%);
+                    }
+
+                 } 
+
+            }
+        }
+        .icon-wrapper{
+            display: none;
+        }
+        
     }
 }
