@@ -278,3 +278,99 @@
     background-position: 0% 0%;
   }
 }
+
+
+@media screen and (max-width: 1440px){
+  .built-growth{
+    .top-content{
+      h3{
+        max-width: 682px;
+      }
+      p{
+        max-width: 682px;
+      }
+    }
+
+    .bottom-content{
+      .left-side,
+      .right-side{
+        .card{
+          .description{
+            h2{
+
+            }
+            p{
+
+            }
+            .title{
+
+            }
+            button{
+              h5{
+
+              }
+              .arrow{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .built-growth{
+    .top-content{
+      h3{
+        max-width: 682px;
+      }
+      p{
+        max-width: 682px;
+        width: 100%;
+      }
+    }
+
+    .bottom-content{
+      display: flex;
+      flex-direction: column;
+      .left-side, .right-side{
+        padding: 0 !important;
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%);
+        /* .card{
+          max-width: 352px;
+        } */
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px){
+  .built-growth{
+    .top-content{
+      h3{
+        max-width: 682px;
+      }
+      p{
+        max-width: 682px;
+        width: 100%;
+      }
+    }
+
+    .bottom-content{
+      display: flex;
+      flex-direction: column;
+      .left-side, .right-side{
+        padding: 0 !important;
+        position: relative;
+        left: 30%; 
+        transform: translateX(-50%);
+        .card{
+          max-width: 352px;
+        }
+      }
+    }
+  }
+}
+
