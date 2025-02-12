@@ -805,8 +805,9 @@
 
 @media screen and (max-width: 840px) {
   .header-section {
-
     nav {
+    display: flex;
+    justify-content: space-between;
       >div:first-child {
         ul {
           display: none;
@@ -851,6 +852,53 @@
 @media screen and (max-width: 593px) {
   .header-section {
 
+    .financial-infrastructure {
+      article {
+        max-width: 347px;
+
+        h1 {
+          font-size: 46px;
+          min-width: 300px;
+        }
+
+        p {
+          font-size: 17px;
+          max-width: 347px;
+        }
+
+        button {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .header-section {
+    nav {
+      position: relative;
+      >div:first-child {
+        ul {
+          display: none;
+        }
+      }
+
+      >div:last-child {
+
+        button {
+          display: none;
+        }
+
+        .toggle {
+          position: absolute;
+          left: 0;
+          display: flex;
+        }
+      }
+
+    }
     .financial-infrastructure {
       article {
         max-width: 347px;
