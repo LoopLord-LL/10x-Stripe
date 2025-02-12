@@ -15,41 +15,38 @@
 @import url("./modular-solutions.css");
 @import url("./designed-developers.css");
 
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    font-family: "Inter", serif;
-    box-sizing: border-box;
+body {
+  font-family: "Inter", serif;
+  box-sizing: border-box;
 }
 
 #app {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* .container-wrapper{
     padding: 20px;
 
 } */
-.container{
-    width: 100%;
-    max-width: 1080px;
-    padding: 50px 0;    
-    margin: 0 auto;
+.container {
+  width: 100%;
+  max-width: 1080px;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
 .main-content {
-    padding: 0;
-    background-color: #F6F9FC;
+  padding: 0;
+  background-color: #f6f9fc;
 }
 
-footer.container-wrapper{
-    padding: 0;
+footer.container-wrapper {
+  padding: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-

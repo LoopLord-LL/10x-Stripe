@@ -58,8 +58,8 @@
       width: 500px;
       overflow: hidden;
       position: relative;
-      box-shadow: 0px 30px 45px -30px #32325D40, 0px 18px 36px -18px #0000001A;
-     
+      box-shadow: 0px 30px 45px -30px #32325d40, 0px 18px 36px -18px #0000001a;
+
       .description {
         padding: 32px 0 0 32px;
         background-color: white;
@@ -112,7 +112,7 @@
           background-color: transparent;
           border: none;
           gap: 5px;
-          color: #635BFF;
+          color: #635bff;
           display: flex;
           align-items: center;
           opacity: 0;
@@ -146,15 +146,15 @@
 
           &:hover {
             cursor: pointer;
-            color: #0A2540;
+            color: #0a2540;
 
             .arrow {
-              background: #0A2540;
+              background: #0a2540;
             }
 
             .arrow::before {
               right: 0;
-              color: #0A2540;
+              color: #0a2540;
             }
           }
         }
@@ -220,32 +220,41 @@
     background-size: 150% 150%;
     animation: moveGradient 40s ease infinite;
     &.yellow {
-      background-image:
-      radial-gradient(at 67% 26%, #ffc250 0px, transparent 30%),
-      radial-gradient(at 39% 64%, #fae187 0px, transparent 30%);
+      background-image: radial-gradient(
+          at 67% 26%,
+          #ffc250 0px,
+          transparent 30%
+        ),
+        radial-gradient(at 39% 64%, #fae187 0px, transparent 30%);
     }
 
     &.cyan {
-      background-image:
-      radial-gradient(at 67% 26%, #8bfff9 0px, transparent 30%),
-      radial-gradient(at 39% 64%, #b793ff 0px, transparent 30%);
+      background-image: radial-gradient(
+          at 67% 26%,
+          #8bfff9 0px,
+          transparent 30%
+        ),
+        radial-gradient(at 39% 64%, #b793ff 0px, transparent 30%);
     }
 
     &.purple {
-      background-image:
-      radial-gradient(at 67% 26%, #81f1ec 0px, transparent 30%),
-      radial-gradient(at 39% 64%, #af8ff0 0px, transparent 30%);
+      background-image: radial-gradient(
+          at 67% 26%,
+          #81f1ec 0px,
+          transparent 30%
+        ),
+        radial-gradient(at 39% 64%, #af8ff0 0px, transparent 30%);
     }
 
-    
     &.green {
-      background-image:
-      radial-gradient(at 67% 26%, #ffe68a 0px, transparent 30%),
-      radial-gradient(at 39% 64%, #4ba04b 0px, transparent 30%);
+      background-image: radial-gradient(
+          at 67% 26%,
+          #ffe68a 0px,
+          transparent 30%
+        ),
+        radial-gradient(at 39% 64%, #4ba04b 0px, transparent 30%);
     }
-    
-    
-    
+
     .description {
       transform: translateY(-45px);
 
@@ -279,38 +288,32 @@
   }
 }
 
-
-@media screen and (max-width: 1440px){
-  .built-growth{
-    .top-content{
-      h3{
+@media screen and (max-width: 1440px) {
+  .built-growth {
+    .top-content {
+      h3 {
         max-width: 682px;
       }
-      p{
+      p {
         max-width: 682px;
       }
     }
 
-    .bottom-content{
+    .bottom-content {
       .left-side,
-      .right-side{
-        .card{
-          .description{
-            h2{
-
+      .right-side {
+        .card {
+          .description {
+            h2 {
             }
-            p{
-
+            p {
             }
-            .title{
-
+            .title {
             }
-            button{
-              h5{
-
+            button {
+              h5 {
               }
-              .arrow{
-
+              .arrow {
               }
             }
           }
@@ -319,25 +322,26 @@
     }
   }
 }
-@media screen and (max-width: 1100px){
-  .built-growth{
-    .top-content{
-      h3{
+@media screen and (max-width: 1100px) {
+  .built-growth {
+    .top-content {
+      h3 {
         max-width: 682px;
       }
-      p{
+      p {
         max-width: 682px;
         width: 100%;
       }
     }
 
-    .bottom-content{
+    .bottom-content {
       display: flex;
       flex-direction: column;
-      .left-side, .right-side{
+      .left-side,
+      .right-side {
         padding: 0 !important;
         position: relative;
-        left: 50%; 
+        left: 50%;
         transform: translateX(-50%);
         /* .card{
           max-width: 352px;
@@ -346,31 +350,31 @@
     }
   }
 }
-@media screen and (max-width: 400px){
-  .built-growth{
-    .top-content{
-      h3{
+@media screen and (max-width: 400px) {
+  .built-growth {
+    .top-content {
+      h3 {
         max-width: 682px;
       }
-      p{
+      p {
         max-width: 682px;
         width: 100%;
       }
     }
 
-    .bottom-content{
+    .bottom-content {
       display: flex;
       flex-direction: column;
-      .left-side, .right-side{
+      .left-side,
+      .right-side {
         padding: 0 !important;
         position: relative;
-        left: 30%; 
+        left: 30%;
         transform: translateX(-50%);
-        .card{
+        .card {
           max-width: 352px;
         }
       }
     }
   }
 }
-

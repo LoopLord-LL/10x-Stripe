@@ -1,156 +1,155 @@
 footer {
-
     .footer-elements {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 16px;
+      padding-right: 16px;
+  
+      .elements {
         display: flex;
-        justify-content: space-between;
-        padding-left: 16px;
-        padding-right: 16px;
-
-        .elements {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
-
-            h2 a {
-                font-weight: 800;
-                font-size: 25px;
-            }
-
-            .copy {
-                margin-top: auto;
-            }
-
-            a {
-                font-size: 13.71px;
-                font-weight: 500;
-                line-height: 24px;
-                color: rgb(13, 51, 88);
-
-                &:hover {
-                    color: gray;
-                }
-            }
-
-            p {
-                color: rgb(0, 0, 0);
-                padding-bottom: 8px;
-
-            }
-
-            .title {
-                padding-top: 20px;
-            }
-
-            .logo-link {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                justify-content: flex-start;
-                padding-top: 6px;
-            }
-
+        flex-direction: column;
+        gap: 4px;
+  
+        h2 a {
+          font-weight: 800;
+          font-size: 25px;
         }
+  
+        .copy {
+          margin-top: auto;
+        }
+  
+        a {
+          font-size: 13.71px;
+          font-weight: 500;
+          line-height: 24px;
+          color: rgb(13, 51, 88);
+  
+          &:hover {
+            color: gray;
+          }
+        }
+  
+        p {
+          color: rgb(0, 0, 0);
+          padding-bottom: 8px;
+        }
+  
+        .title {
+          padding-top: 20px;
+        }
+  
+        .logo-link {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          justify-content: flex-start;
+          padding-top: 6px;
+        }
+      }
     }
-
+  
     .decorative-lines {
+      position: relative;
+      display: flex;
+      justify-content: stretch;
+      transform: rotate(-7deg);
+      top: -173px;
+  
+      .left {
         position: relative;
-        display: flex;
-        justify-content: stretch;
-        transform: rotate(-7deg);
-        top: -173px;
-       
-
-        .left {
-            position: relative;
-            flex: 1;
-            left: -50px;
-
-            .long {
-                background-color: #7A73FF;
-                height: 40px;
-                clip-path: polygon(1% 0, 100% 0, 99.2% 100%, 0 100%);
-                mix-blend-mode: multiply;
-            }
-
-            .short {
-                position: absolute;
-                top: -25px;
-                right: 50px;
-                background-color: #80E9FF;
-                height: 40px;
-                width: 160px;
-                clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
-                mix-blend-mode: multiply;
-            }
+        flex: 1;
+        left: -50px;
+  
+        .long {
+          background-color: #7a73ff;
+          height: 40px;
+          clip-path: polygon(1% 0, 100% 0, 99.2% 100%, 0 100%);
+          mix-blend-mode: multiply;
         }
-
-        .center {
-            width: 950px;
+  
+        .short {
+          position: absolute;
+          top: -25px;
+          right: 50px;
+          background-color: #80e9ff;
+          height: 40px;
+          width: 160px;
+          clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+          mix-blend-mode: multiply;
         }
-
-        .right {
-            position: relative;
-            flex: 1;
-            right: -50px;
-
-            .long {
-                background-color: #80E9FF;
-                height: 40px;
-                clip-path: polygon(1% 0, 100% 0, 99% 100%, 0 100%);
-                mix-blend-mode: multiply;
-            }
-
-            .short {
-                position: absolute;
-                top: 25px;
-                left: 50px;
-                background-color: #7A73FF;
-                height: 40px;
-                width: 160px;
-                clip-path: polygon(4% 0, 100% 0, 97% 100%, 1% 100%);
-                mix-blend-mode: multiply;
-            }
+      }
+  
+      .center {
+        width: 950px;
+      }
+  
+      .right {
+        position: relative;
+        flex: 1;
+        right: -50px;
+  
+        .long {
+          background-color: #80e9ff;
+          height: 40px;
+          clip-path: polygon(1% 0, 100% 0, 99% 100%, 0 100%);
+          mix-blend-mode: multiply;
         }
+  
+        .short {
+          position: absolute;
+          top: 25px;
+          left: 50px;
+          background-color: #7a73ff;
+          height: 40px;
+          width: 160px;
+          clip-path: polygon(4% 0, 100% 0, 97% 100%, 1% 100%);
+          mix-blend-mode: multiply;
+        }
+      }
     }
-}
-
-@media (max-width: 390px) {
+  }
+  
+  @media (max-width: 390px) {
     footer {
-        .footer-elements {
-            flex-direction: column;
-            align-items: center;
-            padding-left: 8px;
-            padding-right: 8px;
-
-            .elements {
-                align-items: center;
-
-                h2 a {
-                    font-size: 20px;
-                }
-
-                a {
-                    font-size: 12px;
-                }
-
-                .logo-link {
-                    justify-content: center;
-                }
-            }
+      .footer-elements {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+  
+        .elements {
+          align-items: center;
+  
+          h2 a {
+            font-size: 20px;
+          }
+  
+          a {
+            font-size: 12px;
+          }
+  
+          .logo-link {
+            justify-content: center;
+          }
         }
-
-        .decorative-lines {
-            top: -100px;
-
-            .left, .right {
-                .long, .short {
-                    height: 30px;
-                }
-            }
-
-            .center {
-                width: 100%;
-            }
+      }
+  
+      .decorative-lines {
+        top: -100px;
+  
+        .left,
+        .right {
+          .long,
+          .short {
+            height: 30px;
+          }
         }
+  
+        .center {
+          width: 100%;
+        }
+      }
     }
-}
+  }
+  

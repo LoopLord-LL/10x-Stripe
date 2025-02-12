@@ -1,366 +1,362 @@
 .enterprise-reinvention {
+  .content {
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 16px;
+
+      h3 {
+        font-size: 16.45px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #635bff;
+      }
+      h2 {
+        font-size: 34.73px;
+        font-weight: 500;
+        line-height: 48px;
+        color: #0a2540;
+      }
+      p {
+        font-size: 16.45px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #425466;
+        padding-bottom: 24px;
+        max-width: 720px;
+        a {
+          text-decoration: none;
+          color: #635bff;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    button {
+      width: 185px;
+      height: 33px;
+      background-color: #635bff;
+      border-radius: 16px;
+      font-size: 14px;
+      color: #ffffff;
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        background-color: #0a2540;
+      }
+    }
+
+    .bottom {
+      #bmwCard {
+        display: flex;
+      }
+      #amazonCard {
+        display: none;
+      }
+      #maerskCard {
+        display: none;
+      }
+      #twilioCard {
+        display: none;
+      }
+      .top-side {
+        display: flex;
+        padding-top: 84px;
+        padding-left: 16px;
+        .text-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+          width: 25%;
+
+          .text {
+            .number {
+              font-size: 24px;
+              font-weight: 500;
+              line-height: 31.92px;
+              color: #0a2540;
+            }
+            p {
+              font-size: 13.83px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #425466;
+              /* max-width: 216px; */
+            }
+            .products {
+              font-size: 13.95px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #0a2540;
+              padding-bottom: 24px;
+            }
+            .pay {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+              color: #425466;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 18.15px;
+            }
+            .connect {
+              padding-top: 12px;
+            }
+          }
+        }
+
+        .amazon-img {
+          background: linear-gradient(
+            to top,
+            rgb(255, 172, 28),
+            rgb(255, 197, 98)
+          );
+        }
+        .bmw-img {
+          background: linear-gradient(
+            to top,
+            rgb(73, 103, 255),
+            rgb(20, 70, 208)
+          );
+        }
+        .maersk-img {
+          background: linear-gradient(
+            to top,
+            rgb(157, 173, 255),
+            rgb(141, 171, 255)
+          );
+        }
+        .twilio-img {
+          background: linear-gradient(
+            to top,
+            #b61818 0%,
+            #b61818 5%,
+            #b61818 10%,
+            #b61818 15%,
+            #ff6347 40%,
+            #ff6666 70%,
+            #e47676 100%
+          );
+        }
+
+        .image {
+          position: relative;
+          cursor: pointer;
+          width: 75%;
+          transition: all 0.5s ease-in-out;
+          &:hover div {
+            margin-bottom: 35px;
+          }
+          &:hover button {
+            opacity: 1;
+            top: 306px;
+          }
+          button {
+            position: absolute;
+            left: -32px;
+            top: 348px;
+            border: none;
+            background: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+          }
+          .back-image {
+            opacity: 0.5;
+            height: 100%;
+            width: 100%;
+          }
+          .frame {
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            opacity: 1;
+            cursor: pointer;
+          }
+          .logo {
+            position: absolute;
+            left: 24px;
+            top: 24px;
+            opacity: 1;
+          }
+          div {
+            position: absolute;
+            left: 24px;
+            bottom: 24px;
+            opacity: 1;
+            padding-right: 230px;
+            font-size: 24.58px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            transition: margin-bottom 0.5s ease-in-out, color 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .bottom-side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+
+        svg {
+          cursor: pointer;
+          border: 1px solid transparent;
+          transition: border-top 0.3s ease-in-out;
+          padding: 15px;
+        }
+
+        .bmw {
+          border-top-color: transparent;
+        }
+
+        .bmw.active {
+          border-top-color: #0066b6;
+        }
+
+        .amazon.active {
+          border-top-color: #dfaa5c;
+        }
+
+        .maersk.active {
+          border-top-color: #0093d0;
+        }
+
+        .twilio.active {
+          border-top-color: #f22f46;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .enterprise-reinvention {
     .content {
       .top {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        padding-left: 16px;
-  
-        h3 {
-          font-size: 16.45px;
-          font-weight: 500;
-          line-height: 28px;
-          color: #635bff;
-        }
         h2 {
-          font-size: 34.73px;
-          font-weight: 500;
-          line-height: 48px;
-          color: #0a2540;
+          font-size: 31x;
+          line-height: 40px;
         }
         p {
-          font-size: 16.45px;
-          font-weight: 500;
-          line-height: 28px;
-          color: #425466;
-          padding-bottom: 24px;
-          max-width: 720px;
-          a {
-            text-decoration: none;
-            color: #635bff;
-            &:hover {
-              color: black;
-            }
-          }
+          max-width: 690px;
         }
       }
-      button {
-        width: 185px;
-        height: 33px;
-        background-color: #635bff;
-        border-radius: 16px;
-        font-size: 14px;
-        color: #ffffff;
-        cursor: pointer;
-        border: none;
-  
-        &:hover {
-          background-color: #0a2540;
-        }
-      }
-  
       .bottom {
-        #bmwCard {
-          display: flex;
-        }
-        #amazonCard {
-          display: none;
-        }
-        #maerskCard {
-          display: none;
-        }
-        #twilioCard {
-          display: none;
-        }
         .top-side {
-          display: flex;
-          padding-top: 84px;
-          padding-left: 16px;
           .text-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-            width: 25%;
-  
-            .text {
-              .number {
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 31.92px;
-                color: #0a2540;
-              }
-              p {
-                font-size: 13.83px;
-                font-weight: 500;
-                line-height: 24px;
-                color: #425466;
-                /* max-width: 216px; */
-              }
-              .products {
-                font-size: 13.95px;
-                font-weight: 500;
-                line-height: 24px;
-                color: #0a2540;
-                padding-bottom: 24px;
-              }
-              .pay {
-                display: flex;
-                align-items: center;
-                gap: 14px;
-                color: #425466;
-                font-size: 15px;
-                font-weight: 500;
-                line-height: 18.15px;
-              }
-              .connect {
-                padding-top: 12px;
-              }
-            }
-          }
-  
-          .amazon-img {
-            background: linear-gradient(
-              to top,
-              rgb(255, 172, 28),
-              rgb(255, 197, 98)
-            );
-          }
-          .bmw-img {
-            background: linear-gradient(
-              to top,
-              rgb(73, 103, 255),
-              rgb(20, 70, 208)
-            );
-          }
-          .maersk-img {
-            background: linear-gradient(
-              to top,
-              rgb(157, 173, 255),
-              rgb(141, 171, 255)
-            );
-          }
-          .twilio-img {
-            background: linear-gradient(
-              to top,
-              #b61818 0%,
-              #b61818 5%,
-              #b61818 10%,
-              #b61818 15%,
-              #ff6347 40%,
-              #ff6666 70%,
-              #e47676 100%
-            );
-          }
-        
-          .image {
-            position: relative;
-            cursor: pointer;
-            width: 75%;
-            transition: all 0.5s ease-in-out;
-            &:hover div {
-              margin-bottom: 35px;
-            }
-            &:hover button {
-              opacity: 1;
-              top: 306px;
-            }
-            button {
-              position: absolute;
-              left: -32px;
-              top: 348px;
-              border: none;
-              background: none;
-              opacity: 0;
-              transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
-            }
-            .back-image {
-              opacity: 0.5;
-              height: 100%;
-              width: 100%;
-            }
-            .frame {
-              position: absolute;
-              right: 24px;
-              top: 24px;
-              opacity: 1;
-              cursor: pointer;
-            }
-            .logo {
-              position: absolute;
-              left: 24px;
-              top: 24px;
-              opacity: 1;
-            }
-            div {
-              position: absolute;
-              left: 24px;
-              bottom: 24px;
-              opacity: 1;
-              padding-right: 230px;
-              font-size: 24.58px;
-              font-weight: 500;
-              color: rgba(255, 255, 255, 1);
-              transition: margin-bottom 0.5s ease-in-out, color 0.3s ease-in-out;
-            }
-          }
-        }
-  
-        .bottom-side {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          width: 100%;
-          height: 100px;
-          
-          
-          svg {
-            cursor: pointer;
-            border: 1px solid transparent;
-            transition: border-top 0.3s ease-in-out;
-            padding: 15px;
-          }
-  
-          .bmw {
-            border-top-color: transparent;
-          }
-  
-          .bmw.active {
-            border-top-color: #0066b6;
-          }
-  
-          .amazon.active {
-            border-top-color: #dfaa5c;
-          }
-  
-          .maersk.active {
-            border-top-color: #0093d0;
-          }
-  
-          .twilio.active {
-            border-top-color: #f22f46;
+            max-width: 248px;
           }
         }
       }
     }
   }
-  
-  @media screen and (max-width: 1024px) {
-    .enterprise-reinvention {
-      .content {
-        .top {
-          h2 {
-            font-size: 31x;
-            line-height: 40px;
-          }
-          p {
-            max-width: 690px;
-          }
+}
+
+@media screen and (max-width: 768px) {
+  .enterprise-reinvention {
+    .content {
+      display: flex;
+      flex-direction: column;
+      .top {
+        h2 {
+          font-size: 31px;
+          line-height: 40px;
         }
-        .bottom {
-          .top-side {
-            .text-wrapper {
-             max-width: 248px;
-            }
-          }
+        p {
+          max-width: 690px;
         }
       }
-    }
-  } 
-
-  @media screen and (max-width: 768px) {
-    .enterprise-reinvention {
-      .content {
-        display: flex;
-        flex-direction: column;
-        .top {
-          h2 {
-            font-size: 31px;
-            line-height: 40px;
+      .bottom {
+        .top-side {
+          display: flex;
+          flex-direction: column;
+          .image {
+            height: 410px;
+            max-width: 736px;
+            width: 100%;
+            div {
+              max-width: 405px;
+              font-size: 24px;
+            }
           }
-          p {
-            max-width: 690px;
-          }
-        }
-        .bottom {
-          .top-side {
-            display: flex;
-            flex-direction: column;
-            .image{
-              height: 410px;
+          .text-wrapper {
+            .text {
               max-width: 736px;
               width: 100%;
-              div{
-                max-width: 405px;
-                font-size: 24px;
-              }
             }
-            .text-wrapper {
-              .text{
-                max-width: 736px;
-                width: 100%;
-                }
-                p{
-                  max-width: 736px;
-                  width: 100%;
-
-                }
-              .text:nth-child(2) {
-                display: none;
-              }
-              .text:nth-child(3) {
-                display: none;
-              }
-            }
-          }
-        }
-      }
-    }
-  } 
-
-  @media screen and (max-width: 450px) {
-
-    .enterprise-reinvention {
-      .content {
-        display: flex;
-        flex-direction: column;
-        .top {
-          h2 {
-            font-size: 31px;
-            line-height: 40px;
-          }
-          p {
-            max-width: 690px;
-          }
-        }
-
-        .bottom {
-          .bottom-side{
-            display: none;
-          }
-          .top-side {
-            display: flex;
-            flex-direction: column;
-            .image{
-              height: 410px;
-              max-width: 370px;
+            p {
+              max-width: 736px;
               width: 100%;
-              div{
-                max-width: 405px;
-                font-size: 24px;
-              }
             }
-            .text-wrapper {
-              .text{
-                max-width: 736px;
-                width: 100%;
-                }
-                p{
-                  max-width: 736px;
-                  width: 100%;
-
-                }
-              .text:nth-child(2) {
-                display: none;
-              }
-              .text:nth-child(3) {
-                display: none;
-              }
+            .text:nth-child(2) {
+              display: none;
             }
-          }
-          svg{
-            display: none !important;
+            .text:nth-child(3) {
+              display: none;
+            }
           }
         }
       }
     }
-  } 
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .enterprise-reinvention {
+    .content {
+      display: flex;
+      flex-direction: column;
+      .top {
+        h2 {
+          font-size: 31px;
+          line-height: 40px;
+        }
+        p {
+          max-width: 690px;
+        }
+      }
+
+      .bottom {
+        .bottom-side {
+          display: none;
+        }
+        .top-side {
+          display: flex;
+          flex-direction: column;
+          .image {
+            height: 410px;
+            max-width: 370px;
+            width: 100%;
+            div {
+              max-width: 405px;
+              font-size: 24px;
+            }
+          }
+          .text-wrapper {
+            .text {
+              max-width: 736px;
+              width: 100%;
+            }
+            p {
+              max-width: 736px;
+              width: 100%;
+            }
+            .text:nth-child(2) {
+              display: none;
+            }
+            .text:nth-child(3) {
+              display: none;
+            }
+          }
+        }
+        svg {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

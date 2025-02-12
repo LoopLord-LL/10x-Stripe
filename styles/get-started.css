@@ -1,243 +1,252 @@
 .get-started {
-    background-color: #F6F9FC;
+    background-color: #f6f9fc;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
     background-position: center;
     position: relative;
     /* background-size: cover; */
-
+  
     .content-wrapper {
-        padding-top: 128px;
-        padding-bottom: 287px;
+      padding-top: 128px;
+      padding-bottom: 287px;
+      display: flex;
+  
+      /* align-items: center;
+          justify-content: center; */
+      button {
+        font-size: 13.36px;
+        font-weight: 500;
+        line-height: 24px;
+        border: none;
+        background: none;
+        color: #635bff;
+        cursor: pointer;
+      }
+  
+      a {
+        font-size: 16.45px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #635bff;
+      }
+  
+      p {
+        font-size: 16.45px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #425466;
+      }
+  
+      .left-content {
+        width: 50%;
         display: flex;
-
-        /* align-items: center;
-        justify-content: center; */
-        button {
-            font-size: 13.36px;
+        flex-direction: column;
+        gap: 24px;
+        padding-left: 16px;
+  
+        p {
+          padding-right: 130px;
+        }
+  
+        h2 {
+          font-size: 22.13px;
+          font-weight: 500;
+          line-height: 32px;
+          color: #0a2540;
+        }
+  
+        .start-btn {
+          width: 112px;
+          height: 33px;
+          background-color: #635bff;
+          border-radius: 17px;
+          color: #ffffff;
+          margin-right: 16px;
+  
+          &:hover {
+            background-color: #0a2540;
+          }
+        }
+      }
+  
+      .right-content {
+        display: flex;
+        width: 50%;
+  
+        .content {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+  
+          button {
+            width: 117px;
+            height: 33px;
+            /* display: flex; */
+          }
+  
+          .title {
+            display: flex;
+            align-items: center;
+          }
+  
+          h3 {
+            font-size: 14.06px;
             font-weight: 500;
             line-height: 24px;
-            border: none;
-            background: none;
-            color: #635BFF;
-            cursor: pointer;
-        }
-
-        a {
-            font-size: 16.45px;
-            font-weight: 500;
-            line-height: 28px;
-            color: #635BFF;
-        }
-
-        p {
-            font-size: 16.45px;
-            font-weight: 500;
-            line-height: 28px;
-            color: #425466;
-        }
-
-        .left-content {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
+            color: #0a2540;
             padding-left: 16px;
-
-            p {
-                padding-right: 130px;
+          }
+  
+          p {
+            padding-left: 16px;
+          }
+  
+          .border {
+            border-left: 1px solid rgba(99, 91, 255, 1);
+            height: 15px;
+          }
+  
+          .prices {
+            .tag {
+              width: 30px;
+              height: 32px;
+              background-color: rgb(122, 115, 255);
+              clip-path: polygon(
+                50% 10%,
+                50% 10%,
+                80% 38%,
+                80% 100%,
+                20% 100%,
+                20% 38%
+              );
+              position: relative;
+              mix-blend-mode: multiply;
+              transform-origin: center;
+              transition: transform 2s ease;
             }
-
-            h2 {
-                font-size: 22.13px;
-                font-weight: 500;
-                line-height: 32px;
-                color: #0A2540;
+  
+            .tag::before {
+              content: "";
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              right: 50%;
+              transform: translate(-50%, -50%);
+              width: 5px;
+              height: 5px;
+              background: white;
+              border-radius: 50%;
             }
-
-            .start-btn {
-                width: 112px;
-                height: 33px;
-                background-color: #635BFF;
-                border-radius: 17px;
-                color: #FFFFFF;
-                margin-right: 16px;
-
-                &:hover {
-                    background-color: #0A2540;
-                }
+  
+            .tag2 {
+              width: 30px;
+              height: 32px;
+              background-color: rgb(128 233 255);
+              clip-path: polygon(
+                50% 10%,
+                50% 10%,
+                80% 38%,
+                80% 100%,
+                20% 100%,
+                20% 38%
+              );
+              position: relative;
+              mix-blend-mode: multiply;
+              top: -34px;
+              rotate: 50deg;
+              left: -4px;
+              transform-origin: center;
+              transition: transform 2s ease;
             }
-
+  
+            .tag2::before {
+              content: "";
+              position: absolute;
+              top: 35%;
+              left: 50%;
+              right: 50%;
+              transform: translate(-50%, -50%);
+              width: 5px;
+              height: 5px;
+              background: white;
+              border-radius: 50%;
+            }
+          }
+  
+          .sticker {
+            position: relative;
+  
+            .sticker1 {
+              position: absolute;
+              top: -40px;
+              left: 14px;
+              width: 27px;
+              height: 35px;
+              background-color: #80e9ff;
+              mix-blend-mode: multiply;
+              border-radius: 4px;
+            }
+  
+            .sticker2 {
+              position: absolute;
+              width: 27px;
+              height: 35px;
+              top: -35px;
+              left: 20px;
+              background-color: #7a73ff;
+              mix-blend-mode: multiply;
+              border-radius: 4px;
+            }
+          }
         }
-
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .get-started {
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+  
+        .left-content {
+          width: 100%;
+          padding-left: 16px;
+          padding-right: 0;
+        }
         .right-content {
-            display: flex;
-            width: 50%;
-
-            .content {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                button {
-                    width: 117px;
-                    height: 33px;
-                    /* display: flex; */
-
-                }
-
-                .title {
-                    display: flex;
-                    align-items: center;
-                }
-
-                h3 {
-                    font-size: 14.06px;
-                    font-weight: 500;
-                    line-height: 24px;
-                    color: #0A2540;
-                    padding-left: 16px;
-                }
-
-                p {
-                    padding-left: 16px;
-                }
-
-                .border {
-                    border-left: 1px solid rgba(99, 91, 255, 1);
-                    height: 15px;
-                }
-
-                .prices {
-                    .tag {
-                        width: 30px;
-                        height: 32px;
-                        background-color: rgb(122, 115, 255);
-                        clip-path: polygon(50% 10%, 50% 10%, 80% 38%, 80% 100%, 20% 100%, 20% 38%);
-                        position: relative;
-                        mix-blend-mode: multiply;
-                        transform-origin: center;
-                        transition: transform 2s ease;
-                    }
-
-
-                    .tag::before {
-                        content: '';
-                        position: absolute;
-                        top: 35%;
-                        left: 50%;
-                        right: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 5px;
-                        height: 5px;
-                        background: white;
-                        border-radius: 50%;
-                    }
-
-                    .tag2 {
-                        width: 30px;
-                        height: 32px;
-                        background-color: rgb(128 233 255);
-                        clip-path: polygon(50% 10%, 50% 10%, 80% 38%, 80% 100%, 20% 100%, 20% 38%);
-                        position: relative;
-                        mix-blend-mode: multiply;
-                        top: -34px;
-                        rotate: 50deg;
-                        left: -4px;
-                        transform-origin: center;
-                        transition: transform 2s ease;
-
-                    }
-
-                    .tag2::before {
-                        content: '';
-                        position: absolute;
-                        top: 35%;
-                        left: 50%;
-                        right: 50%;
-                        transform: translate(-50%, -50%);
-                        width: 5px;
-                        height: 5px;
-                        background: white;
-                        border-radius: 50%;
-                    }
-
-                }
-
-                .sticker {
-                    position: relative;
-
-                    .sticker1 {
-                        position: absolute;
-                        top: -40px;
-                        left: 14px;
-                        width: 27px;
-                        height: 35px;
-                        background-color: #80E9FF;
-                        mix-blend-mode: multiply;
-                        border-radius: 4px;
-                    }
-
-                    .sticker2 {
-                        position: absolute;
-                        width: 27px;
-                        height: 35px;
-                        top: -35px;
-                        left: 20px;
-                        background-color: #7A73FF;
-                        mix-blend-mode: multiply;
-                        border-radius: 4px;
-                    }
-                }
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .content {
+            width: 100%;
+            .title {
+              padding-left: 16px;
             }
+          }
         }
+      }
     }
-}
-
-@media (max-width: 768px){
-    .get-started{
-        .content-wrapper{
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-
-            .left-content{
-                width: 100%;
-                padding-left: 16px;
-                padding-right: 0;
-                
+  }
+  @media (max-width: 768px) {
+    .get-started {
+      .content-wrapper {
+        .right-content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 50px;
+          .content {
+            width: 100%;
+            .title {
+              padding-left: 16px;
             }
-            .right-content{
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                .content{
-                    width: 100%;
-                    .title{
-                        padding-left: 16px;
-                    }
-                }
-            }
+          }
         }
+      }
     }
-}
-@media (max-width: 768px){
-    .get-started{
-        .content-wrapper{
-            .right-content{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
-                .content{
-                    width: 100%;
-                    .title{
-                        padding-left: 16px;
-                    }
-                }
-            }
-        }
-    }
-}
+  }
+  
