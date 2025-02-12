@@ -35,26 +35,36 @@
       padding-right: 50px;
     }
   
-    button {
+    .button-with-arrow {
       width: 185px;
-      height: 33px;
-      background-color: #635bff;
-      border-radius: 16px;
-      font-size: 14px;
-      color: #ffffff;
-      border-color: #635bff;
+      color: #FFFFFF;
+      border-radius: 16.5px;
+      background-color: #635BFF;
       border: none;
-  
-      img {
-        margin-left: 5px;
+    
+      .arrow::before {
+        border-color: #FFFFFF;
       }
   
-      transition: 0.3s;
-      cursor: pointer;
-    }
+      .arrow {
+        &::before {
+          border: solid;
+          border-width: 0px 2px 2px 0px;
+        }
+      }
   
-    button:hover {
-      background-color: #0a2540;
+      &:hover {
+        background-color: #0A2540;
+        transition: 0.1s ease;
+  
+        .arrow::before {
+          right: 0px;
+        }
+  
+        .arrow {
+          background: #FFFFFF;
+        }
+      }
     }
   }
   
@@ -209,6 +219,8 @@
       border-radius: 3px;
       background-color: #9966ff;
       font-size: 8.5px;
+      border: none;
+      color: #FFFFFF;
     }
   
     h4,

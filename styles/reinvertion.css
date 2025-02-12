@@ -33,21 +33,37 @@
           }
         }
       }
-      button {
-        width: 185px;
-        height: 33px;
-        background-color: #635bff;
-        border-radius: 16px;
-        font-size: 14px;
-        color: #ffffff;
-        cursor: pointer;
+      .button-with-arrow {
+        width: 250px;
+        color: #FFFFFF;
+        border-radius: 16.5px;
+        background-color: #635BFF;
         border: none;
-  
+      
+        .arrow::before {
+          border-color: #FFFFFF;
+        }
+    
+        .arrow {
+          &::before {
+            border: solid;
+            border-width: 0px 2px 2px 0px;
+          }
+        }
+    
         &:hover {
-          background-color: #0a2540;
+          background-color: #0A2540;
+          transition: 0.1s ease;
+    
+          .arrow::before {
+            right: 0px;
+          }
+    
+          .arrow {
+            background: #FFFFFF;
+          }
         }
       }
-  
       .bottom {
         #bmwCard {
           display: flex;
@@ -79,6 +95,7 @@
                 color: #0a2540;
               }
               p {
+                height: 72px;
                 font-size: 13.83px;
                 font-weight: 500;
                 line-height: 24px;
@@ -153,8 +170,9 @@
               top: 306px;
             }
             button {
+              color: #FFFFFF;
               position: absolute;
-              left: -32px;
+              left: 24px;
               top: 348px;
               border: none;
               background: none;

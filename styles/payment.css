@@ -38,40 +38,21 @@
     padding-right: 50px;
   }
 
-  button {
+  .button-with-arrow {
     width: 185px;
-    height: 33px;
-    font-size: 14px;
     color: #FFFFFF;
     border-radius: 16.5px;
     background-color: #635BFF;
     border: none;
-    padding-right: 10px;
-
+  
     .arrow::before {
       border-color: #FFFFFF;
     }
 
     .arrow {
-      width: 10px;
-      height: 2px;
-      position: relative;
-      top: -8px;
-      left: 160px;
-      transition: 0.2s;
-
       &::before {
-        content: "";
-        position: absolute;
         border: solid;
         border-width: 0px 2px 2px 0px;
-        top: -3px;
-        right: 3px;
-        transition: 0.2s;
-        padding: 3px;
-        transform: rotate(-45deg);
-        box-sizing: border-box;
-        display: inline-block;
       }
     }
 
@@ -320,6 +301,7 @@
       color: #1D3944;
       font-size: 13px;
       margin-top: 10px;
+      border: none;
 
       >img:first-child {
         width: 26.03px;

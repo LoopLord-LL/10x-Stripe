@@ -52,4 +52,58 @@ a {
     text-decoration: none;
 }
 
+ .button-with-arrow {
+            box-sizing: border-box;
+            border: 0;
+            display: flex;
+            transition: 0.2s background;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6em;
+            font-weight: 400;
+            height: 33px;
+            font-family: inter;
+            letter-spacing: 0.2px;
+            font-size: 13.48px;
+            letter-spacing: 0.20000000298023224px;
+            margin-bottom: 60px;
+            cursor: pointer;
+        }
+
+        .button-with-arrow .arrow {
+            margin-top: 1px;
+            width: 10px;
+            height: 2px;
+            position: relative;
+            transition: 0.2s;
+        }
+
+        .button-with-arrow .arrow::before {
+            content: "";
+            box-sizing: border-box;
+            position: absolute;
+            border: solid  #fff;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            top: -3px;
+            right: 3px;
+            transition: 0.2s;
+            padding: 3px;
+            transform: rotate(-45deg);
+        }
+
+        /* button:hover {
+            background-color: #0A2540;
+        }
+
+        button:hover .arrow {
+            background-color:  #fff;
+        } */
+
+        .button-with-arrow:hover .arrow:before {
+            right: 0;
+        }
+
+
+
 

@@ -26,7 +26,7 @@
           font-weight: 500;
           padding-right: 81px;
         }
-        button {
+        /* button {
           width: 144px;
           height: 33px;
           background-color: #00d4ff;
@@ -36,6 +36,38 @@
           cursor: pointer;
           &:hover {
             background-color: #fff;
+          }
+        } */
+
+        .button-with-arrow {
+          width: 185px;
+          color: #0a2540;
+          border-radius: 16.5px;
+          background-color: #00d4ff;
+          border: none;
+        
+          .arrow::before {
+            border-color: #0a2540;
+          }
+      
+          .arrow {
+            &::before {
+              border: solid;
+              border-width: 0px 2px 2px 0px;
+            }
+          }
+      
+          &:hover {
+            background-color: #FFFFFF;
+            transition: 0.1s ease;
+      
+            .arrow::before {
+              right: 0px;
+            }
+      
+            .arrow {
+              background: #0a2540;
+            }
           }
         }
       }
@@ -97,24 +129,34 @@
           /* padding-right: 50px; */
           padding-left: 16px;
         }
-        button {
-          color: #00d4ff;
-          font-size: 14px;
-          font-weight: 500;
-          /* padding-right: 134px; */
+        .button-with-arrow {
           padding-left: 16px;
-          cursor: pointer;
+          color: #00d4ff;
+          background-color: transparent;
+          border: none;
+    
+          .arrow {
+            &::before {
+              color: #00d4ff;
+              border: solid;
+              border-width: 0px 2px 2px 0px;
+            }
+          }
+      
+          &:hover {
+            color: #FFFFFF;
+            /* transition: 0.1s ease; */
+      
+            .arrow::before {
+              color: #FFFFFF;
+              right: 0px;
+            }
+      
+            .arrow {
+              background: #FFFFFF;
+            }
+          }
         }
-      }
-      button {
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-        cursor: pointer;
-      }
-
-      button:hover {
-        color: white;
       }
     }
   }

@@ -77,74 +77,37 @@
             margin-bottom: 20px;
         }
 
-        /* From Uiverse.io by satyamchaudharydev */
-        button {
-            --primary-color: #635BFF;
-            --secondary-color: #fff;
-            --hover-color: #0A2540;
-            --arrow-width: 10px;
-            --arrow-stroke: 2px;
-            box-sizing: border-box;
-            border: 0;
-            border-radius: 20px;
-            color: var(--secondary-color);
-            background: var(--primary-color);
-            display: flex;
-            transition: 0.2s background;
-            align-items: center;
-            justify-content: center;
-            gap: 0.6em;
-            font-weight: 400;
-            height: 33px;
-            width: 173.28px;
-            font-family: inter;
-            letter-spacing: 0.2px;
-            font-size: 13.48px;
-            letter-spacing: 0.20000000298023224px;
-            margin-bottom: 60px;
-            cursor: pointer;
-        }
-
-        button .arrow-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        button .arrow {
-            margin-top: 1px;
-            width: var(--arrow-width);
-            background: var(--primary-color);
-            height: var(--arrow-stroke);
-            position: relative;
-            transition: 0.2s;
-        }
-
-        button .arrow::before {
-            content: "";
-            box-sizing: border-box;
-            position: absolute;
-            border: solid var(--secondary-color);
-            border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-            display: inline-block;
-            top: -3px;
-            right: 3px;
-            transition: 0.2s;
-            padding: 3px;
-            transform: rotate(-45deg);
-        }
-
-        button:hover {
-            background-color: var(--hover-color);
-        }
-
-        button:hover .arrow {
-            background: var(--secondary-color);
-        }
-
-        button:hover .arrow:before {
-            right: 0;
-        }
+        .button-with-arrow {
+            width: 185px;
+            color: #FFFFFF;
+            border-radius: 16.5px;
+            background-color: #635BFF;
+            border: none;
+          
+            .arrow::before {
+              border-color: #FFFFFF;
+            }
+        
+            .arrow {
+              &::before {
+                border: solid;
+                border-width: 0px 2px 2px 0px;
+              }
+            }
+        
+            &:hover {
+              background-color: #0A2540;
+              transition: 0.1s ease;
+        
+              .arrow::before {
+                right: 0px;
+              }
+        
+              .arrow {
+                background: #FFFFFF;
+              }
+            }
+          }
 
         h6 {
             font-size: 14.18px;

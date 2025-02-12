@@ -182,66 +182,47 @@
       } */
 
 
-      >button {
-        font-size: 13.95px;
+      >.button-with-arrow {
         color: #FFFFFF;
         background-color: transparent;
         border: none;
-        width: 108.41px;
-        height: 33px;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        align-items: center;
-
-        .arrow {
-          width: 10px;
-          height: 2px;
-          position: relative;
-          transition: 0.2s;
-
-          &::before {
-            content: "";
-            position: absolute;
-            border: solid;
-            border-width: 0px 2px 2px 0px;
-            top: -3px;
-            right: 3px;
-            transition: 0.2s;
-            padding: 3px;
-            transform: rotate(-45deg);
-            box-sizing: border-box;
-            display: inline-block;
-          }
+    
+        &:nth-child(1) {
+          width: 200px;
         }
 
         &:nth-child(2) {
+          width: 172px;
           background-color: #FFFFFF;
-          font-size: 13.83px;
+          /* font-size: 13.83px; */
           color: #E17537;
           border-radius: 16.5px;
-          width: 91.22px;
+          /* width: 91.22px; */
+
+          .arrow {
+            &::before {
+              border: solid  #E17537;
+              border-width: 0 2px 2px 0;
+            }
+          }
+          
         }
 
         &:hover {
           opacity: 0.6;
           transition: 0.1s ease;
           cursor: pointer;
-
-          .arrow::before {
-            right: 0px;
-          }
         }
 
         &:first-child:hover {
           .arrow {
-            background: #FFFFFF;
+            background-color: #FFFFFF;
           }
         }
 
         &:nth-child(2):hover {
           .arrow {
-            background: #E17537;
+            background-color: #E17537;
           }
         }
       }
@@ -294,32 +275,14 @@
         gap: 10px;
         padding-top: 30px;
 
-        button {
+        .button-with-arrow {
           width: 110px;
-          font-size: 14px;
-          height: 33px;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-
+        
           .arrow {
-            width: 10px;
-            height: 2px;
-            position: relative;
-            transition: 0.2s;
-
+          
             &::before {
-              content: "";
-              position: absolute;
               border: solid;
               border-width: 0px 2px 2px 0px;
-              top: -3px;
-              right: 3px;
-              transition: 0.2s;
-              padding: 3px;
-              transform: rotate(-45deg);
-              box-sizing: border-box;
-              display: inline-block;
             }
           }
 
@@ -328,9 +291,7 @@
             background-color: #0A2540;
             color: #FFFFFF;
             border: none;
-            justify-content: center;
-            gap: 10px;
-
+        
             .arrow::before {
               border-color: #FFFFFF;
             }
@@ -339,11 +300,8 @@
           &:last-child {
             background-color: transparent;
             border: none;
-            gap: 20px;
             color: #0A2540;
-            text-align: left;
-            line-height: 20px;
-
+        
             .arrow::before {
               border-color: #0A2540;
             }
@@ -353,10 +311,6 @@
           &:hover {
             opacity: 0.6;
             transition: 0.1s ease;
-
-            .arrow::before {
-              right: 0px;
-            }
           }
 
           &:first-child:hover {

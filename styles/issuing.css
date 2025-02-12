@@ -42,20 +42,37 @@
             max-width: 460px;
 
         }
-        button {
+        .button-with-arrow {
             width: 185px;
-            height: 33px;
-            background-color: #635BFF;
-            border-radius: 16px;
-            font-size: 14px;
             color: #FFFFFF;
+            border-radius: 16.5px;
+            background-color: #635BFF;
             border: none;
-            cursor: pointer;
-    
-            &:hover {
-                background-color: #0A2540;
+          
+            .arrow::before {
+              border-color: #FFFFFF;
             }
-        }
+        
+            .arrow {
+              &::before {
+                border: solid;
+                border-width: 0px 2px 2px 0px;
+              }
+            }
+        
+            &:hover {
+              background-color: #0A2540;
+              transition: 0.1s ease;
+        
+              .arrow::before {
+                right: 0px;
+              }
+        
+              .arrow {
+                background: #FFFFFF;
+              }
+            }
+          }
 
 
         .add-info{
