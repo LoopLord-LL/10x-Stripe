@@ -77,6 +77,80 @@
           }
         }
       }
+      /* animation for SVG */
+        
+
+      /* Hover effect using the 'hovered' class */
+      .hovered {
+          /* background-color: lightcoral !important; /* Hover effect on cube1 */
+          background-color: blue !important;
+      }
+
+      .cube2.hovered {
+          background-color: blue !important;
+          /* Hover effect on cube2 */
+      }
+
+      .train-line {
+          height: 2px;
+          background-color: green;
+          position: absolute;
+          top: 50px;
+          left: 100px;
+          /* Start position at cube1 */
+          width: 0px;
+          opacity: 1;
+          z-index: 999;
+          animation: expandAndShrink 5s linear infinite;
+
+      }
+
+      @keyframes expandAndShrink {
+          0% {
+              left: 100px;
+          }
+          20% {
+              left: 100px;
+              width: 100px;
+          }
+          40% {
+              left: 100px;
+              width: 200px;
+          }
+          60% {
+              left: 100px;
+              width: 200px;
+          }
+          75% {
+              left: 200px;
+              width: 100px;
+          }
+          100% {
+              left: 300px;
+              width: 0;
+          }
+      }
+
+      @keyframes moveLine {
+          0% {
+              /* left: 100px; */
+              width: 0;
+              /* opacity: 1; */
+          }
+
+          50% {
+              /* left: 10px; */
+              width: 100px;
+              /* opacity: 1; */
+          }
+
+          100% {
+              /* left: 100px; */
+              width: 200px;
+              /* opacity: 0; */
+          }
+      }
+
          /* Global Styles */
          .svg-container {
           border: 1px solid #e6e6e5;
@@ -171,7 +245,7 @@
       }
   
         /*invoicing SVG styles*/
-        .invoicing-svg {
+        .invoicing-svg, .cube2 {
           top: -156px;
           left: 50%;
           &:hover {
@@ -197,7 +271,7 @@
         }
   
         /*billing SVG styles*/
-        .billing-svg {
+        .billing-svg, .cube1 {
           top: -156px;
           left: 0;
           &:hover {
