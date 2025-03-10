@@ -1,0 +1,36 @@
+@import "_import";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", serif;
+  box-sizing: border-box;
+}
+
+#app {
+  overflow-x: hidden;
+}
+
+/* .container-wrapper{
+      padding: 20px;
+  
+  } */
+.container {
+  width: 100%;
+  max-width: 1080px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.main-content {
+  padding: 0;
+  background-color: #f6f9fc;
+}
+
+footer.container-wrapper {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
