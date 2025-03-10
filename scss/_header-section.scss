@@ -277,7 +277,7 @@
       p {
         font-size: 16.59px;
         font-weight: 700;
-        color: #425466;
+        color: $text-primary-color;
         width: 470px;
         line-height: 25px;
       }
@@ -396,7 +396,7 @@
           }
 
           h6 {
-            color: #425466;
+            color: $text-primary-color;
             font-size: 9.97px;
             font-weight: 500;
           }
@@ -423,7 +423,7 @@
           height: 12px;
           background-color: #e6ebf1;
           margin-top: 15px;
-          color: #425466;
+          color: $text-primary-color;
 
           span {
             background-color: #ffffff;
@@ -441,7 +441,7 @@
         label {
           font-size: 9.97px;
           font-weight: 500;
-          color: #425466;
+          color: $text-primary-color;
         }
 
         input {

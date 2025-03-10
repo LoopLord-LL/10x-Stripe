@@ -33,7 +33,7 @@
   p {
     font-size: 17px;
     font-weight: 700;
-    color: #425466;
+    color: $text-primary-color;
     margin-bottom: 24px;
     padding-right: 50px;
   }
@@ -102,7 +102,7 @@
   p {
     font-size: 14px;
     font-weight: 500;
-    color: #425466;
+    color: $text-primary-color;
     margin-bottom: 4px;
 
     span a {
@@ -354,7 +354,7 @@
       height: 1.2px;
       background-color: #e6ebf1;
       margin-top: 26px;
-      color: #425466;
+      color: $text-primary-color;
 
       span {
         background-color: #ffffff;
